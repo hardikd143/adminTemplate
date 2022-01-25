@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blocks</title>
+    <!-- css  -->
+    <link rel="stylesheet" href="./css/custom.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/block.css">
+    <link rel="stylesheet" href="./css/font.css" />
+  </head>
+  <body>
+    <!-- sidebar starts here  -->
+    <div class="sidebar bg-white">
+      <div class="logo-icon position-relative">
+        <a class="side-links" href="index.html">
+          <img src="./img/logo.png" alt="logo" />
+        </a>
+        <a class="position-absolute top-0 end-0 MiniSidebarBtn transitionLinear">
+          <i class="fas fa-times"></i>
+        </a>
+      </div>
+      <ul class="sidebar-list">
+        <li class="Sidesearch">
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+        </li>
+        <li>
+          <a class="side-links" href="index.html"
+            ><i class="fa fa-tachometer"></i><span>Dashboard</span></a
+          >
+        </li>
+        <li>
+          <a class="side-links open-side-dropdown"
+            ><i class="fa fa-cogs"></i>
+            <span>Elements <i class="fas fa-angle-right"></i></span>
+          </a>
+          <ul class="sidebar-dropdown">
+            <li>
+              <a class="side-links" href="carousels.html"> Carousels</a>
+            </li>
+            <li>
+              <a class="side-links" href="cards.html"> Default cards</a>
+            </li>
+            <li>
+              <a class="side-links" href="people.html"> People cards</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a class="side-links open-side-dropdown"
+            ><i class="fas fa-book"></i>
+            <span>More Pages <i class="fas fa-angle-right"></i></span>
+          </a>
+          <ul class="sidebar-dropdown">
+            <li>
+              <a class="side-links" href="timeline.html"> Timeline</a>
+            </li>
+            <li>
+              <a class="side-links" href="error.html"> 404</a>
+            </li>
+            <li>
+              <a class="side-links" href="blank-page.html"> Blank Page</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a class="side-links" href="charts.html"
+            ><i class="fa fa-pie-chart"></i><span>Charts</span></a
+          >
+        </li>
+        <li>
+          <a class="side-links" href="Gantt-chart.html"
+          ><i class="fas fa-chart-bar"></i><span>Gantt Chart</span></a
+        > 
+        </li>
+        <li>
+          <a class="side-links" href="pricing.html"
+            ><i class="fa fa-table"></i><span>Pricing tables</span></a
+          >
+        </li>
+        <li>
+          <a class="side-links open-side-dropdown"
+            ><i class="fa far fa-envelope"></i
+            ><span>Mailbox <i class="fas fa-angle-right"></i></span
+          ></a>
+          <ul class="sidebar-dropdown">
+            <li>
+              <a class="side-links" href="inbox.html"> Inbox</a>
+            </li>
+            <li>
+              <a class="side-links"> Compose Mail</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a class="side-links" href="blocks.html"
+            ><i class="fa fa-th"></i>
+            <span> content blocks </span>
+          </a>
+        </li>
+        <li>
+          <a class="side-links" href="faq.html"
+            ><i class="fa far fa-question-circle"></i><span>Faq's</span></a
+          >
+        </li>
+        <li>
+          <a class="side-links open-side-dropdown"
+            ><i class="fas fa-user"></i><span>User <i class="fas fa-angle-right"></i></span></a
+          >
+          <ul class="sidebar-dropdown">
+            <li>
+              <a class="side-links" href="login.html"> Login</a>
+            </li>
+            <li>
+              <a class="side-links" href="register.html">Sign Up</a>
+            </li>
+            <li>
+              <a class="side-links" href="forgot-password.html">Forgot Password</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a class="side-links" href="forms.html"
+            ><i class="fas fa-file-alt"></i><span>Forms</span></a
+          >
+        </li>
+          <a class="MaxsideBarBtn transitionLinear rotate180">
+            <i class="fas fa-angle-double-right"></i>
+          </a>
+        </li>
+      </ul>
+
+      
+    </div>
+    <!-- sidebar ends here  -->
+    <!-- navbar starts here  -->
+    <nav class="navbar shadow navbar-expand-lg navbar-light bg-white">
+      <div class="container-fluid justify-content-end">
+        <button class="collapse-sidebar">
+          <i class="fas fa-angle-double-right"></i>
+        </button>
+        <form class="d-flex">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success" type="submit">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+        <div class="profile-detail d-flex ms-4">
+          <div class="left">
+            <ul class="d-flex">
+              <!-- notifications -->
+              <li class="profile-left-list position-relative">
+                <a class="position-relative openNotification me-3">
+                  <i class="far fa-bell"></i>
+                  <span class="position-absolute top-0 start-100 badge">
+                    4
+                  </span>
+                </a>
+                <!-- notification dropdown -->
+                <ul
+                  class="
+                    bg-white
+                    notificationDropdown
+                    profileDropdown
+                    overflow-hidden
+                  "
+                >
+                  <li class="w-100">
+                    <div class="header">
+                      <h3 class="m-0 line1">You Have 4 New Notifications</h3>
+                    </div>
+                  </li>
+                  <li class="notificationMsg">
+                    <a href="#" class="d-flex align-items-center">
+                      <div class="user-img">
+                        <img src="./img/avatar1.jpg" alt="" />
+                      </div>
+                      <div class="desc flex-grow-1">
+                        <p class="m-0 line1">Johnson purchased template</p>
+                        <span>Just Now</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="notificationMsg">
+                    <a href="#" class="d-flex align-items-center">
+                      <div class="user-img">
+                        <img src="./img/avatar2.jpg" alt="" />
+                      </div>
+                      <div class="desc flex-grow-1">
+                        <p class="m-0 line1">New customer registered</p>
+                        <span>1 hour ago</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="notificationMsg seeMore overflow-hidden">
+                    <a href="#" class="d-flex align-items-center">
+                      <div class="user-img">
+                        <img src="./img/avatar3.jpg" alt="" />
+                      </div>
+                      <div class="desc flex-grow-1">
+                        <p class="m-0 line1">Lorem ipsum dolor sit amet</p>
+                        <span>2 hours ago</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="notificationMsg seeMore overflow-hidden">
+                    <a href="#" class="d-flex align-items-center">
+                      <div class="user-img">
+                        <img src="./img/avatar1.jpg" alt="" />
+                      </div>
+                      <div class="desc flex-grow-1">
+                        <p class="m-0 line1">New customer registered</p>
+                        <span>3 hours ago</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li
+                    class="notificationBottom notificationseemore bg-blue hide"
+                  >
+                    <a href="#" class=""> See all </a>
+                  </li>
+                </ul>
+              </li>
+              <!-- comment  -->
+              <li class="profile-left-list position-relative">
+                <a class="position-relative openComment me-3">
+                  <i class="far fa-comment"></i>
+                  <span class="position-absolute top-0 start-100 badge">
+                    3
+                  </span>
+                </a>
+                <!-- comment dropdown -->
+                <ul
+                  class="
+                    bg-white
+                    commentDropdown
+                    profileDropdown
+                    overflow-hidden
+                  "
+                >
+                  <li class="w-100">
+                    <div class="header">
+                      <h3 class="m-0 line1">You Have 3 New Messages</h3>
+                    </div>
+                  </li>
+                  <li class="notificationMsg">
+                    <a href="#" class="d-flex align-items-center">
+                      <div class="user-img">
+                        <img src="./img/avatar1.jpg" alt="" />
+                      </div>
+                      <div class="desc flex-grow-1">
+                        <p class="m-0 line1">Johnson purchased template</p>
+                        <span>Just Now</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="notificationMsg">
+                    <a href="#" class="d-flex align-items-center">
+                      <div class="user-img">
+                        <img src="./img/avatar2.jpg" alt="" />
+                      </div>
+                      <div class="desc flex-grow-1">
+                        <p class="m-0 line1">New customer registered</p>
+                        <span>1 hour ago</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="notificationMsg seeMore overflow-hidden">
+                    <a href="#" class="d-flex align-items-center">
+                      <div class="user-img">
+                        <img src="./img/avatar3.jpg" alt="" />
+                      </div>
+                      <div class="desc flex-grow-1">
+                        <p class="m-0 line1">Lorem ipsum dolor sit amet</p>
+                        <span>2 hours ago</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="notificationBottom commentseemore bg-blue hide">
+                    <a href="#" class=""> See all </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <!-- profile  -->
+          <div class="right position-relative">
+            <a class="me-3 position-relative openProfile">
+              <img src="./img/profileimg.jpg" alt="profileimg" />
+              <span class="position-absolute top-0 start-100 badge"> </span>
+            </a>
+            <!-- profile dropdown -->
+            <ul class="bg-white mainprofileDropdown overflow-hidden">
+              <li class="user bg-blue text-white">
+                <h5 class="fw-bolder">John Deo</h5>
+                <span class="ms-2">Available</span>
+              </li>
+              <li class="profilelist">
+                <a href="#" class="d-flex align-items-center">
+                  <i class="fas fa-user text-blue"></i>
+                  My Profile
+                </a>
+              </li>
+              <li class="profilelist">
+                <a href="#" class="d-flex align-items-center">
+                  <i class="fas fa-user-friends text-blue"></i>
+                  1k Followers
+                </a>
+              </li>
+              <li class="profilelist">
+                <a href="#" class="d-flex align-items-center">
+                  <i class="fas fa-cog text-blue"></i>
+                  Setting
+                </a>
+              </li>
+              <li class="profilelist">
+                <a href="#" class="d-flex align-items-center">
+                  <i class="fas fa-heart text-blue"></i>
+                  100 Likes
+                </a>
+              </li>
+              <li class="profilelist">
+                <a href="#" class="d-flex align-items-center">
+                  <i class="fas fa-power-off text-blue"></i>
+                  Logout
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar ends here  -->
+    <!-- scroll btn starts here  -->
+    <button class="scrollTopBtn">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+    <!-- scroll btn ends here  -->
+    <!-- main content starts here -->
+    <div class="main-content">
+      <div class="container-fluid main-inner">
+        <!-- heading  -->
+        <div class="CardHeading">
+          <h3>Content Blocks</h3>
+        </div>
+
+
+
+        <!-- content block  -->
+        <div class="card mb-4 p-3 p-lg-5 border-0 customCardShadow">
+          <div class="card-body py-3 p-0">
+            <div class="row justify-content-center">
+              <div class="col-12 col-lg-6 col-md-10 pe-lg-4 order-1 order-lg-0">
+                <h3 class="blockTitle">About Content Block</h3>
+                <p class="mb-3 text-para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusa ntium corrupti neque sunt labore veritatis.</p>
+                <p class="mb-lg-5 mb-3 text-para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusa ntium corrupti neque sunt praesentium aut, labore veritatis. Eaque, similique aspernatur. Perferendis doloremque ut praesentium vel voluptatum quasi dolor explicabo nobis ex?</p>
+                <a class="btnStyled">
+                  Read More
+                </a>
+              </div>
+              <div class="col-12 col-lg-6 col-md-10 pl-lg-4 my-4 my-lg-0 order-0 order-lg-1">
+                <img src="./img/attachment1.jpg" alt="block img" class="img-fluid rounded">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- content block  -->
+        <div class="card mb-4 p-3 p-lg-5 customCardShadow border-0">
+          <div class="card-body py-3 p-0">
+            <div class="row justify-content-center">
+              <div class="col-12 col-lg-6 col-md-10 pl-lg-4 my-4 my-lg-0 ">
+                <img src="./img/attachment2.jpg" alt="block img" class="img-fluid rounded">
+              </div>
+              <div class="col-12 col-lg-6 col-md-10 pe-lg-4">
+                <h3 class="blockTitle">Content Block With 2 Buttons
+                </h3>
+                <p class="mb-3 text-para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusa ntium corrupti neque sunt praesentium aut, labore veritatis. Eaque, similique aspernatur. Perferendis doloremque ut praesentium vel voluptatum quasi dolor explicabo nobis ex?
+                </p>
+                <p class="mb-lg-5 mb-3 text-para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusa ntium corrupti neque sunt labore veritatis.
+                </p>
+                <a class="btnStyled my-2">
+                  Read More
+                </a>
+                <a class="btnStyled outlined my-2">
+                  Contact us
+                </a>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- content block  -->
+        <div class="card mb-4 p-lg-5 p-3 border-0 customCardShadow ">
+          <div class="card-body py-3 p-0">
+            <div class="row justify-content-center">
+              <div class="col-12 col-lg-6 col-md-10 order-0 order-lg-1 my-4 my-lg-0">
+                <img src="./img/sliderimg3.jpg" alt="block img" class="img-fluid rounded">
+              </div>
+              <div class="col-12 col-lg-6 col-md-10 order-1 order-lg-0">
+                <h3 class="blockTitle">
+                  Content Block With List Features
+                </h3>
+                <p class="text-para">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusa ntium corrupti neque sunt aut, labore veritatis.
+                </p>
+                <ul class="blockList
+                ">
+                  <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  </li>
+                  <li>
+                    Accusa ntium corrupti neque sunt praesentium aut, labore veritatis accusa ntium nobis ex.
+                  </li>
+                  <li>
+                    Eaque, similique aspernatur. Perferendis doloremque ut
+                  </li>
+                  <li>
+                    praesentium vel voluptatum quasi dolor explicabo nobis ex?
+                  </li>
+                  <li>
+                    Lorem ipsum dolor sit amet, adipisicing elit.
+                  </li>
+                </ul>
+              </div> 
+            </div>
+          </div>
+        </div>
+
+        <!-- content block  -->
+        <div class="card mb-4 p-lg-5 p-3 border-0 customCardShadow">
+          <div class="card-body py-3 p-0">
+            <h3 class="blockTitle mb-4">
+              Content Block Grids
+            </h3>
+            <div class="row justify-content-sm-center justify-content-start justify-content-md-start justify-content-lg-start">
+              <div class="col-12 col-sm-10 col-md-6 col-lg-4 mt-3">
+                <img src="./img/sliderimg2.jpg" alt="" class="img-fluid rounded">
+                <p class="gridPara">
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                </p>
+                <span class="text-blue">Caption</span>
+              </div>
+              <div class="col-12 col-sm-10 col-md-6 col-lg-4 mt-3">
+                <img src="./img/sliderimg1.jpg" alt="" class="img-fluid rounded">
+                <p class="gridPara">
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                </p>
+                <span class="text-blue">Caption</span>
+              </div>
+              <div class="col-12 col-sm-10 col-md-6 col-lg-4 mt-3">
+                <img src="./img/sliderimg3.jpg" alt="" class="img-fluid rounded">
+                <p class="gridPara">
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                </p>
+                <span class="text-blue">Caption</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- content block  -->
+        <div class="card mb-4 p-lg-5 p-3 border-0 customCardShadow">
+          <div class="card-body py-3 p-0">
+            <h3 class="blockTitle mb-4">
+              Content Block Features With Photo
+            </h3>
+            <div class="row align-items-lg-center">
+              <div class="col-12 col-lg-6">
+                <img src="./img/contentblock.jpg" alt="block img" class="img-fluid rounded">
+              </div>
+              <div class="col-12 col-lg-6 mt-lg-0 mt-4 ps-md-4 ">
+                <h3 class="contetPicTitle">
+                  Features with photo, you are in a good company
+                </h3>
+                <div class="row featureGrid">
+                  <div class="col-12 col-md-6 mt-4">
+                    <h4 class="text-blue">Feature One
+                    </h4>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                    </p>
+                  </div>
+                  <div class="col-12 col-md-6 mt-4">
+                    <h4 class="text-blue">Feature Two
+                    </h4>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                    </p>
+                  </div>
+                  <div class="col-12 col-md-6 mt-4">
+                    <h4 class="text-blue">Feature Three
+                    </h4>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                    </p>
+                  </div>
+                  <div class="col-12 col-md-6 mt-4">
+                    <h4 class="text-blue">Feature Four
+                    </h4>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- content block  -->
+        <div class="card mb-4 p-lg-5 p-3 border-0 customCardShadow ">
+          <div class="card-body py-3 p-0">
+            <h3 class="blockTitle">
+              Content Block Features
+            </h3>
+            <div class="row ContentIconBlocks justify-content-md-center">
+              <div class="col-12 col-lg-4 col-md-9 mt-5 text-center">
+                <span class="fas fa-laptop"></span>
+                <h4>Web Design</h4>
+                <p>Lorem ipsum dolor sit amet,Ea consequuntur illum facere aperiam sequi optio consectetur.
+                </p>
+                <a class="readmore">Read More</a>
+              </div>
+              <div class="col-12 col-lg-4 col-md-9 mt-5 text-center">
+                <span class="fas fa-paint-brush"></span>
+                <h4>Graphic Design</h4>
+                <p>Lorem ipsum dolor sit amet,Ea consequuntur illum facere aperiam sequi optio consectetur.
+                </p>
+                <a class="readmore">Read More</a>
+              </div>
+              <div class="col-12 col-lg-4 col-md-9 mt-5 text-center">
+                <span class="fas fas fa-signal"></span>
+                <h4>Web Development</h4>
+                <p>Lorem ipsum dolor sit amet,Ea consequuntur illum facere aperiam sequi optio consectetur.
+                </p>
+                <a class="readmore">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <!-- content block  -->
+        <div class="card mb-4 p-lg-5 p-3 border-0 customCardShadow ">
+          <div class="card-body py-3 p-0">
+            <h3 class="blockTitle">
+              Content Block Features With Photo
+            </h3>
+            <div class="row">
+              <div class="col-12 col-lg-6 order-1 order-lg-0">
+                <div class="row ContentIconBlocks">
+                  <div class="col-12 col-md-6 mt-4">
+                    <i class="fas fa-laptop"></i>
+                    <h5 class="title">Web design</h5>
+                    <p class="m-0">Type your text here... Lorem ipsum dolor sit amet.
+                    </p>
+                  </div>
+                  <div class="col-12 col-md-6 mt-4">
+                    <i class="fas fa-paint-brush"></i>
+                    <h5 class="title">Graphic design</h5>
+                    <p class="m-0">Type your text here... Lorem ipsum dolor sit amet.
+                    </p>
+                  </div>
+                  <div class="col-12 col-md-6 mt-4">
+                    <i class="fas fa-signal"></i>
+                    <h5 class="title">Web development</h5>
+                    <p class="m-0">Type your text here... Lorem ipsum dolor sit amet.
+                    </p>
+                  </div>
+                  <div class="col-12 col-md-6 mt-4">
+                    <i class="fas fa-laptop"></i>
+                    <h5 class="title">Web design</h5>
+                    <p class="m-0">Type your text here... Lorem ipsum dolor sit amet.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6 order-0 order-lg-1 my-3">
+                <img src="./img/sliderimg2.jpg" alt="block img" class="img-fluid rounded">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- main content ends here -->
+    <!-- script  -->
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/fontawesome.js"></script>
+    <script src="./js/header.js"></script>
+  </body>
+</html>

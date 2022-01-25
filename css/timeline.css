@@ -1,0 +1,96 @@
+.cardHeading {
+  padding: 30px 20px;
+  background: #fff;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eee;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.cardHeading h3 {
+  margin: 0;
+  font-size: 22px;
+  line-height: 27px;
+  font-weight: 600;
+}
+.cardHeading h3 span {
+  color: var(--paraColor);
+  font-weight: normal;
+}
+.tCard{
+  margin-bottom: 20px;
+}
+.tCard .card-header {
+  font-size: 20px;
+  background: none;
+  border-bottom: 1px solid #eee;
+}
+.tCard .timeline::before {
+  content: "";
+  position: absolute;
+  top: 55px;
+  left: calc(20% + 20px);
+  bottom: 0;
+  width: 4px;
+  background: #eee;
+}
+.tCard ul li::before {
+  content: "–";
+  margin-right: 8px;
+}
+.tCard .line {
+  clear: both;
+  text-align: left;
+  position: relative;
+}
+.tCard .line .year {
+  float: left;
+  width: 20%;
+  padding-right: 30px;
+  text-align: right;
+  position: relative;
+  width: 20%;
+}
+.tCard .line .year::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border: 3px solid var(--blue);
+  background-color: #fff;
+  border-radius: 100%;
+  top: 9%;
+  right: -21px;
+  z-index: 99;
+}
+.tCard .line .year h3 {
+  font-size: 19px;
+}
+.tCard .line .body {
+  width: 80%;
+  margin-bottom: 45px;
+  float: right;
+  width: 76%;
+  padding-left: 30px;
+}
+.tCard .line .body .cardTitle {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 600;
+  margin: 0;
+  z-index: 0;
+}
+
+.tCard .line .body ul li {
+  font-size: 16px;
+  line-height: 25px;
+  margin-bottom: 5px;
+  color: var(--paraColor);
+}
+.tCard .line .body p{
+  color: var(--paraColor);
+  margin: 0;
+}
+.tCard .line .body img{
+  border-radius: 50%;
+}

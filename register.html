@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <!-- css  -->
+    <link rel="stylesheet" href="./css/custom.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/login.css" />
+  </head>
+  <body>
+    <!-- register starts here -->
+    <div class="signup-content py-5 py-md-5">
+      <div class="card p-md-4 border-0 customCardShadow">
+        <div class="card-body">
+          <!-- form  -->
+          <form action="#" method="POST">
+            <div class="signupHeader mb-lg-5 mb-4 text-center">
+              <h3 class="title mb-2 text-blue">SIGNUP</h3>
+              <p>Create your account here, and continue</p>
+            </div>
+            <div class="mb-3 form-group">
+              <label for="signupname" class="form-label m-0">Your Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="signupname"
+                autocomplete="off"
+                required
+              />
+            </div>
+            <div class="mb-3 form-group">
+              <label for="signupemail" class="form-label m-0"
+                >Email Address</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="signupemail"
+                autocomplete="off"
+                required
+              />
+            </div>
+            <div class="mb-3 form-group">
+              <label for="signuppassword" class="form-label m-0"
+                >Password</label
+              >
+              <div class="position-relative ">
+                <input
+                  type="password"
+                  class="form-control pe-5"
+                  id="signuppassword"
+                  autocomplete="off"
+                  required
+                />
+                <i class="far fa-eye passVisibility"></i>
+              </div>
+            </div>
+            <div class="form-check terms">
+              <input type="checkbox" id="agree" class="form-check-input" />
+              <label for="agree">
+                I agree to the <a class="text-blue"> Terms of Services </a>
+                and
+                <a class="text-blue"> Privacy Policy </a>
+              </label>
+            </div>
+            <div
+              class="
+                d-flex
+                flex-wrap
+                align-items-center
+                justify-content-between
+              "
+            >
+              <button type="submit" class="submitbtn mt-4 rounded">
+                Create Account
+              </button>
+              <p class="signup mt-4 m-0">
+                Already have an account?
+                <a href="login.html" class="text-blue"> Login </a>
+              </p>
+            </div>
+          </form>
+          <!-- home btn   -->
+          <p class="toHome mt-4">
+            <a href="index.html" class="text-decoration-none">
+              <span class="arrow"></span>
+              <span class="text position-relative px-2"> Back to Home</span></a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- register content ends here -->
+    <!-- script  -->
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/fontawesome.js"></script>
+    <script src="./js/header.js"></script>
+    <script src="./js/pass.js"></script>
+  </body>
+</html>

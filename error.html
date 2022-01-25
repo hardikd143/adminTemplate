@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>error 404</title>
+    <!-- css  -->
+    <link rel="stylesheet" href="./css/custom.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/font.css" />
+    <style>
+      .error {
+        display: grid;
+        place-items: center;
+        height: 100vh;
+      }
+      .error-content {
+        width: 100%;
+      }
+      .error-404 {
+        font-size: 200px;
+        font-weight: 900;
+        position: relative;
+        text-align: center;
+        z-index: 2;
+        line-height: 1;
+      }
+      .not-found {
+        text-align: center;
+        display: block;
+        position: relative;
+        font-size: 3em;
+      }
+      .error-text {
+        color: var(--paraColor);
+        font-size: 16px;
+        line-height: 25px;
+        text-align:center;
+      }
+      .backBtn {
+        font-size: 16px;
+        line-height: 25px;
+        padding: 10px 25px;
+        text-decoration:none !important;
+        font-weight: 400;
+        text-transform: capitalize;
+        border-radius:6px;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="error py-3 py-md-5">
+        <div class="error-content p-4 d-flex justify-content-center flex-column align-items-center">
+          <div class="error-404 text-blue">404</div>
+          <div class="not-found">Page not found</div>
+          <p class="error-text my-3 mb-4">
+            Oops! The page you are looking for does not exist. It might have
+            been moved or deleted.
+          </p>
+          <a href="index.html" class="backBtn text-white bg-blue">Back to Home</a>
+        </div>
+      </div>
+    </section>
+    <!-- script  -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/fontawesome.js"></script>
+  </body>
+</html>

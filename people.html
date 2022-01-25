@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>People</title>
+    <!-- css  -->
+    <link rel="stylesheet" href="./css/custom.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/people.css" />
+    <link rel="stylesheet" href="./css/font.css" />
+  </head>
+  <body>
+    <!-- sidebar starts here  -->
+    <div class="sidebar bg-white">
+      <div class="logo-icon position-relative">
+        <a class="side-links" href="index.html">
+          <img src="./img/logo.png" alt="logo" />
+        </a>
+        <a class="position-absolute top-0 end-0 MiniSidebarBtn transitionLinear">
+          <i class="fas fa-times"></i>
+        </a>
+      </div>
+      <ul class="sidebar-list">
+        <li class="Sidesearch">
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+        </li>
+        <li>
+          <a class="side-links" href="index.html"
+            ><i class="fa fa-tachometer"></i><span>Dashboard</span></a
+          >
+        </li>
+        <li>
+          <a class="side-links open-side-dropdown"
+            ><i class="fa fa-cogs"></i>
+            <span>Elements <i class="fas fa-angle-right"></i></span>
+          </a>
+          <ul class="sidebar-dropdown">
+            <li>
+              <a class="side-links" href="carousels.html"> Carousels</a>
+            </li>
+            <li>
+              <a class="side-links" href="cards.html"> Default cards</a>
+            </li>
+            <li>
+              <a class="side-links" href="people.html"> People cards</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a class="side-links open-side-dropdown"
+            ><i class="fas fa-book"></i>
+            <span>More Pages <i class="fas fa-angle-right"></i></span>
+          </a>
+          <ul class="sidebar-dropdown">
+            <li>
+              <a class="side-links" href="timeline.html"> Timeline</a>
+            </li>
+            <li>
+              <a class="side-links" href="error.html"> 404</a>
+            </li>
+            <li>
+              <a class="side-links" href="blank-page.html"> Blank Page</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a class="side-links" href="charts.html"
+            ><i class="fa fa-pie-chart"></i><span>Charts</span></a
+          >
+        </li>
+        <li>
+          <a class="side-links" href="Gantt-chart.html"
+          ><i class="fas fa-chart-bar"></i><span>Gantt Chart</span></a
+        > 
+        </li>
+        <li>
+          <a class="side-links" href="pricing.html"
+            ><i class="fa fa-table"></i><span>Pricing tables</span></a
+          >
+        </li>
+        <li>
+          <a class="side-links open-side-dropdown"
+            ><i class="fa far fa-envelope"></i
+            ><span>Mailbox <i class="fas fa-angle-right"></i></span
+          ></a>
+          <ul class="sidebar-dropdown">
+            <li>
+              <a class="side-links" href="inbox.html"> Inbox</a>
+            </li>
+            <li>
+              <a class="side-links" > Compose Mail</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a class="side-links" href="blocks.html"
+            ><i class="fa fa-th"></i>
+            <span> content blocks </span>
+          </a>
+        </li>
+        <li>
+          <a class="side-links" href="faq.html"
+            ><i class="fa far fa-question-circle"></i><span>Faq's</span></a
+          >
+        </li>
+        <li>
+          <a class="side-links open-side-dropdown"
+            ><i class="fas fa-user"></i><span>User <i class="fas fa-angle-right"></i></span></a
+          >
+          <ul class="sidebar-dropdown">
+            <li>
+              <a class="side-links" href="login.html"> Login</a>
+            </li>
+            <li>
+              <a class="side-links" href="register.html">Sign Up</a>
+            </li>
+            <li>
+              <a class="side-links" href="forgot-password.html">Forgot Password</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a class="side-links" href="forms.html"
+            ><i class="fas fa-file-alt"></i><span>Forms</span></a
+          >
+        </li>
+          <a class="MaxsideBarBtn transitionLinear rotate180">
+            <i class="fas fa-angle-double-right"></i>
+          </a>
+        </li>
+      </ul>
+
+      
+    </div>
+    <!-- sidebar ends here  -->
+    <!-- navbar starts here  -->
+    <nav class="navbar shadow navbar-expand-lg navbar-light bg-white">
+      <div class="container-fluid justify-content-end">
+        <button class="collapse-sidebar">
+          <i class="fas fa-angle-double-right"></i>
+        </button>
+        <form class="d-flex">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success" type="submit">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+        <div class="profile-detail d-flex ms-4">
+          <div class="left">
+            <ul class="d-flex">
+              <!-- notifications -->
+              <li class="profile-left-list position-relative">
+                <a class="position-relative openNotification me-3">
+                  <i class="far fa-bell"></i>
+                  <span class="position-absolute top-0 start-100 badge">
+                    4
+                  </span>
+                </a>
+                <!-- notification dropdown -->
+                <ul
+                  class="
+                    bg-white
+                    notificationDropdown
+                    profileDropdown
+                    overflow-hidden
+                  "
+                >
+                  <li class="w-100">
+                    <div class="header">
+                      <h3 class="m-0 line1">You Have 4 New Notifications</h3>
+                    </div>
+                  </li>
+                  <li class="notificationMsg">
+                    <a href="#" class="d-flex align-items-center">
+                      <div class="user-img">
+                        <img src="./img/avatar1.jpg" alt="" />
+                      </div>
+                      <div class="desc flex-grow-1">
+                        <p class="m-0 line1">Johnson purchased template</p>
+                        <span>Just Now</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="notificationMsg">
+                    <a href="#" class="d-flex align-items-center">
+                      <div class="user-img">
+                        <img src="./img/avatar2.jpg" alt="" />
+                      </div>
+                      <div class="desc flex-grow-1">
+                        <p class="m-0 line1">New customer registered</p>
+                        <span>1 hour ago</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="notificationMsg seeMore overflow-hidden">
+                    <a href="#" class="d-flex align-items-center">
+                      <div class="user-img">
+                        <img src="./img/avatar3.jpg" alt="" />
+                      </div>
+                      <div class="desc flex-grow-1">
+                        <p class="m-0 line1">Lorem ipsum dolor sit amet</p>
+                        <span>2 hours ago</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="notificationMsg seeMore overflow-hidden">
+                    <a href="#" class="d-flex align-items-center">
+                      <div class="user-img">
+                        <img src="./img/avatar1.jpg" alt="" />
+                      </div>
+                      <div class="desc flex-grow-1">
+                        <p class="m-0 line1">New customer registered</p>
+                        <span>3 hours ago</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li
+                    class="notificationBottom notificationseemore bg-blue hide"
+                  >
+                    <a href="#" class=""> See all </a>
+                  </li>
+                </ul>
+              </li>
+              <!-- comment  -->
+              <li class="profile-left-list position-relative">
+                <a class="position-relative openComment me-3">
+                  <i class="far fa-comment"></i>
+                  <span class="position-absolute top-0 start-100 badge">
+                    3
+                  </span>
+                </a>
+                <!-- comment dropdown -->
+                <ul
+                  class="
+                    bg-white
+                    commentDropdown
+                    profileDropdown
+                    overflow-hidden
+                  "
+                >
+                  <li class="w-100">
+                    <div class="header">
+                      <h3 class="m-0 line1">You Have 3 New Messages</h3>
+                    </div>
+                  </li>
+                  <li class="notificationMsg">
+                    <a href="#" class="d-flex align-items-center">
+                      <div class="user-img">
+                        <img src="./img/avatar1.jpg" alt="" />
+                      </div>
+                      <div class="desc flex-grow-1">
+                        <p class="m-0 line1">Johnson purchased template</p>
+                        <span>Just Now</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="notificationMsg">
+                    <a href="#" class="d-flex align-items-center">
+                      <div class="user-img">
+                        <img src="./img/avatar2.jpg" alt="" />
+                      </div>
+                      <div class="desc flex-grow-1">
+                        <p class="m-0 line1">New customer registered</p>
+                        <span>1 hour ago</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="notificationMsg seeMore overflow-hidden">
+                    <a href="#" class="d-flex align-items-center">
+                      <div class="user-img">
+                        <img src="./img/avatar3.jpg" alt="" />
+                      </div>
+                      <div class="desc flex-grow-1">
+                        <p class="m-0 line1">Lorem ipsum dolor sit amet</p>
+                        <span>2 hours ago</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="notificationBottom commentseemore bg-blue hide">
+                    <a href="#" class=""> See all </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <!-- profile  -->
+          <div class="right position-relative">
+            <a class="me-3 position-relative openProfile">
+              <img src="./img/profileimg.jpg" alt="profileimg" />
+              <span class="position-absolute top-0 start-100 badge"> </span>
+            </a>
+            <!-- profile dropdown -->
+            <ul class="bg-white mainprofileDropdown overflow-hidden">
+              <li class="user bg-blue text-white">
+                <h5 class="fw-bolder">John Deo</h5>
+                <span class="ms-2">Available</span>
+              </li>
+              <li class="profilelist">
+                <a href="#" class="d-flex align-items-center">
+                  <i class="fas fa-user text-blue"></i>
+                  My Profile
+                </a>
+              </li>
+              <li class="profilelist">
+                <a href="#" class="d-flex align-items-center">
+                  <i class="fas fa-user-friends text-blue"></i>
+                  1k Followers
+                </a>
+              </li>
+              <li class="profilelist">
+                <a href="#" class="d-flex align-items-center">
+                  <i class="fas fa-cog text-blue"></i>
+                  Setting
+                </a>
+              </li>
+              <li class="profilelist">
+                <a href="#" class="d-flex align-items-center">
+                  <i class="fas fa-heart text-blue"></i>
+                  100 Likes
+                </a>
+              </li>
+              <li class="profilelist">
+                <a href="#" class="d-flex align-items-center">
+                  <i class="fas fa-power-off text-blue"></i>
+                  Logout
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar ends here  -->
+    <!-- scroll btn starts here  -->
+    <button class="scrollTopBtn">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+    <!-- scroll btn ends here  -->
+    <!-- main content starts here -->
+    <div class="main-content">
+      <div class="container-fluid main-inner">
+          <!-- version 1 starts here  -->
+              <div class="card mb-5 version1">
+                  <div class="card-header pCardheading text-blue">
+                      <h3>
+                          People Cards - 
+                          <span>
+                              Version 1
+                            </span>
+                        </h3>
+                  </div>
+                  <div class="card-body">
+                      <div class="team mb-4">
+                          <div class="row justify-content-center">
+                              <div class="col-12 col-lg-3 col-md-6">
+                                  <div class="peopleItem">
+                                      <div class="peopleImg">
+                                          <img src="./img/peoplecard1.jpg" alt="people" class="h-auto w-100">
+                                      </div>
+                                      <div class="peopleInfo">
+                                          <h3 >
+                                              Anthony
+                                          </h3>
+                                          <span class="line1">Project Manager</span>
+                                          <div class="social">
+                                            <a href="#" class="fab fa-facebook-f">
+                                            </a>
+                                            <a href="#"class="fab fa-twitter">
+                                            </a>
+                                            <a href="#" class="fab fa-instagram">
+                                            </a>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-12 col-lg-3 col-md-6">
+                                <div class="peopleItem">
+                                    <div class="peopleImg">
+                                        <img src="./img/peoplecard2.jpg" alt="people" class="h-auto w-100">
+                                    </div>
+                                    <div class="peopleInfo">
+                                        <h3  class="line1">
+                                            Dennis Jack
+                                        </h3>
+                                        <span>Team Lead</span>
+                                        <div class="social">
+                                          <a href="#" class="fab fa-facebook-f">
+                                          </a>
+                                          <a href="#"class="fab fa-twitter">
+                                          </a>
+                                          <a href="#" class="fab fa-instagram">
+                                          </a>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="col-12 col-lg-3 col-md-6">
+                                <div class="peopleItem">
+                                    <div class="peopleImg">
+                                        <img src="./img/peoplecard3.jpg" alt="people" class="h-auto w-100">
+                                    </div>
+                                    <div class="peopleInfo">
+                                        <h3 >
+                                            Harold
+                                        </h3>
+                                        <span>Developer</span>
+                                        <div class="social">
+                                          <a href="#" class="fab fa-facebook-f">
+                                          </a>
+                                          <a href="#"class="fab fa-twitter">
+                                          </a>
+                                          <a href="#" class="fab fa-instagram">
+                                          </a>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="col-12 col-lg-3 col-md-6">
+                                <div class="peopleItem">
+                                    <div class="peopleImg">
+                                        <img src="./img/peoplecard4.jpg" alt="people" class="h-auto w-100">
+                                    </div>
+                                    <div class="peopleInfo">
+                                        <h3 >
+                                            Lawrence
+                                        </h3>
+                                        <span>Designer</span>
+                                        <div class="social">
+                                          <a href="#" class="fab fa-facebook-f">
+                                          </a>
+                                          <a href="#"class="fab fa-twitter">
+                                          </a>
+                                          <a href="#" class="fab fa-instagram">
+                                          </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          <!-- version 1 ends here  -->
+          <!-- version 2 starts here  -->
+          <div class="card mb-5 version2">
+                <div class="card-header pCardheading text-blue">
+                    <h3>
+                        People Cards - 
+                        <span>
+                            Version 2
+                          </span>
+                      </h3>
+                </div>
+                <div class="card-body">
+                    <div class="team mb-4">
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-lg-3 col-md-6">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <div class="v2-inner">
+                                            <img src="./img/peoplecard5.jpg" alt="">
+                                            <div class="info mt-3">
+                                                <h5>Alexander Smith</h5>
+                                                <p>Web designer</p>
+                                                <div class="social">
+                                                    <a href="#" class="fab fa-facebook-f">
+                                                    </a>
+                                                    <a href="#"class="fab fa-twitter">
+                                                    </a>
+                                                    <a href="#" class="fab fa-instagram">
+                                                    </a>
+                                                </div>
+                                                <a href="#" class="viewProfile mt-4 text-blue">
+                                                    View Profile
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-3 col-md-6">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <div class="v2-inner">
+                                            <img src="./img/peoplecard6.jpg" alt="">
+                                            <div class="info mt-3">
+                                                <h5>Elizabeth Lisa</h5>
+                                                <p>Web designer</p>
+                                                <div class="social">
+                                                  <a href="#" class="fab fa-facebook-f">
+                                                  </a>
+                                                  <a href="#"class="fab fa-twitter">
+                                                  </a>
+                                                  <a href="#" class="fab fa-instagram">
+                                                  </a>
+                                                </div>
+                                                <a href="#" class="viewProfile mt-4 text-blue">
+                                                    View Profile
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-3 col-md-6">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <div class="v2-inner">
+                                            <img src="./img/peoplecard7.jpg" alt="">
+                                            <div class="info mt-3">
+                                                <h5>Michael Watson</h5>
+                                                <p>Web designer</p>
+                                                <div class="social">
+                                                  <a href="#" class="fab fa-facebook-f">
+                                                  </a>
+                                                  <a href="#"class="fab fa-twitter">
+                                                  </a>
+                                                  <a href="#" class="fab fa-instagram">
+                                                  </a>
+                                                </div>
+                                                <a href="#" class="viewProfile mt-4 text-blue">
+                                                    View Profile
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-3 col-md-6">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <div class="v2-inner">
+                                            <img src="./img/peoplecard8.jpg" alt="">
+                                            <div class="info mt-3">
+                                                <h5>Johnson ker</h5>
+                                                <p>Web designer</p>
+                                                <div class="social">
+                                                  <a href="#" class="fab fa-facebook-f">
+                                                  </a>
+                                                  <a href="#"class="fab fa-twitter">
+                                                  </a>
+                                                  <a href="#" class="fab fa-instagram">
+                                                  </a>
+                                                </div>
+                                                <a href="#" class="viewProfile mt-4 text-blue">
+                                                    View Profile
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-- version 2 ends here  -->
+        <!-- version 3 starts here  -->
+        <div class="card mb-5 version3">
+            <div class="card-header pCardheading text-blue">
+                <h3>
+                    People Cards - 
+                    <span>
+                        Version 3
+                      </span>
+                  </h3>
+            </div>
+            <div class="card-body">
+                <div class="team mb-4">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6 col-md-9 col-sm-12 col-12">
+                            <div class="card py-2 my-2">
+                                <div class="card-body text-center">
+                                    <div class="row">
+                                        <div class="col-6 mb-3">
+                                            <img src="./img/peoplecard9.jpg" class="img-fluid" alt="">
+                                        </div>
+                                        <div class="col-6 info text-start">
+                                            <h3>Alexander Smith</h3>
+                                            <span>Web designer</span>
+                                            <p class="my-3 line3">
+                                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate odit corporis....
+                                            </p>
+                                            <a class="call" href="tel:+21">
+                                                <i class="fas fas fa-phone" ></i>
+                                                <span>
+                                                    +(21)-255-999-8888
+                                                </span>
+                                            </a>
+                                            <a href="mailto:example@mail.com" class="mail">
+                                                <i class="far fa-envelope-open"></i>
+                                                <span>
+                                                    example@mail.com
+                                                </span>
+                                            </a>
+                                            <div class="social justify-content-start">
+                                                <a href="#">
+                                                    <i class="fab fa-facebook-f"></i>
+                                                  </a>
+                                                  <a href="#">
+                                                    <i class="fab fa-twitter"></i>
+                                                  </a>
+                                                  <a href="#">
+                                                      <i class="fab fa-instagram"></i>
+                                                  </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-9 col-sm-12 col-12">
+                            <div class="card py-2 my-2">
+                                <div class="card-body text-center">
+                                    <div class="row">
+                                        <div class="col-6 mb-3">
+                                            <img src="./img/peoplecard10.jpg" class="img-fluid" alt="">
+                                        </div>
+                                        <div class="col-6 info text-start">
+                                            <h3>Michael Watson</h3>
+                                            <span>Web designer</span>
+                                            <p class="my-3 line3">
+                                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate odit corporis....
+                                            </p>
+                                            <a class="call" href="tel:+21">
+                                                <i class="fas fas fa-phone" ></i>
+                                                <span>
+                                                    +(21)-255-999-8888
+                                                </span>
+                                            </a>
+                                            <a href="mailto:example@mail.com" class="mail">
+                                                <i class="far fa-envelope-open"></i>
+                                                <span>
+                                                    example@mail.com
+                                                </span>
+                                            </a>
+                                            <div class="social justify-content-start">
+                                                <a href="#">
+                                                    <i class="fab fa-facebook-f"></i>
+                                                  </a>
+                                                  <a href="#">
+                                                    <i class="fab fa-twitter"></i>
+                                                  </a>
+                                                  <a href="#">
+                                                      <i class="fab fa-instagram"></i>
+                                                  </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- version 3 ends here  -->
+      </div>
+    </div>
+    <!-- main content ends here -->
+    <!-- script  -->
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/fontawesome.js"></script>
+    <script src="./js/header.js"></script>
+  </body>
+</html>

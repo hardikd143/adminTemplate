@@ -1,0 +1,98 @@
+@media screen and (max-width: 500px) {
+  .main-inner {
+    padding: 0 !important;
+  }
+}
+.wrapper {
+  padding: 20px 40px 20px 15px;
+  border: 1px solid #e0e0e0;
+  overflow: hidden;
+  margin-bottom: 20px;
+  transition: all 0.3s linear;
+  height: auto;
+}
+.wrapper .arrow {
+  position: relative;
+  float: right;
+}
+.wrapper .arrow::before {
+  content: "";
+  height: 10px;
+  width: 3px;
+  transform:rotateY(0deg) rotate(-45deg);
+  background: var(--paraColor);
+  position: absolute;
+  left: 10px;
+  top: 5px;
+  transition: all 0.3s linear;
+}
+.wrapper .arrow.close::before{
+    transform: rotate(-315deg);
+    /* transform:rotateY(180deg) rotate(-45deg); */
+}
+.wrapper .arrow::after {
+    content: "";
+    height: 10px;
+    width: 3px;
+    transform: rotate(45deg);
+    transform:rotateY(0deg) rotate(45deg);
+    background: var(--paraColor);
+    position: absolute;
+    left: 16px;
+    top: 5px;
+    transition: all 0.3s linear;
+}
+.wrapper .arrow.close::after{
+    transform: rotate(315deg);
+    /* transform:rotateY(180deg) rotate(45deg); */
+}
+.wrapper .que {
+  width: 100%;
+  display: flex;
+}
+.wrapper .que .quenum {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  display: inline-block;
+  border-radius: 50%;
+  background: var(--blue);
+  text-align: center;
+  color: white;
+  font-size: 12px;
+  margin-right: 10px;
+}
+.wrapper .que h2 {
+  width: calc(100% - 30px);
+  text-align: left;
+  font-weight: 700;
+  font-size: 18px;
+  color: #2c3038;
+  cursor: pointer;
+  overflow: hidden;
+  margin: 0;
+  line-height: 20px;
+  flex-grow: 1;
+  transition: all 0.3s linear;
+}
+@media screen and (max-width: 550px) {
+  .wrapper .que h2 {
+    font-size: 14px;
+  }
+}
+.wrapper .ans {
+  transition: all 0.1s linear;
+  height: 0;
+}
+.wrapper .ans p {
+  color: rgba(48, 69, 92, 0.8);
+  font-size: 16px;
+  line-height: 26px;
+  position: relative;
+  overflow: hidden;
+  top: 35px;
+  margin: 0;
+  padding-top: 14px;
+  transition: all 0.2s linear;
+  transition-delay: 0.1s;
+}

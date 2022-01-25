@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Inbox
+    </title>
+    <!-- css  -->
+    <link rel="stylesheet" href="./css/custom.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/inbox.css" />
+    <link rel="stylesheet" href="./css/font.css" />
+  </head>
+  <body>
+    <!-- sidebar starts here  -->
+    <div class="sidebar bg-white">
+      <div class="logo-icon position-relative">
+        <a class="side-links" href="index.html">
+          <img src="./img/logo.png" alt="logo" />
+        </a>
+        <a class="position-absolute top-0 end-0 MiniSidebarBtn transitionLinear">
+          <i class="fas fa-times"></i>
+        </a>
+      </div>
+      <ul class="sidebar-list">
+        <li class="Sidesearch">
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+        </li>
+        <li>
+          <a class="side-links" href="index.html"
+            ><i class="fa fa-tachometer"></i><span>Dashboard</span></a
+          >
+        </li>
+        <li>
+          <a class="side-links open-side-dropdown"
+            ><i class="fa fa-cogs"></i>
+            <span>Elements <i class="fas fa-angle-right"></i></span>
+          </a>
+          <ul class="sidebar-dropdown">
+            <li>
+              <a class="side-links" href="carousels.html"> Carousels</a>
+            </li>
+            <li>
+              <a class="side-links" href="cards.html"> Default cards</a>
+            </li>
+            <li>
+              <a class="side-links" href="people.html"> People cards</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a class="side-links open-side-dropdown"
+            ><i class="fas fa-book"></i>
+            <span>More Pages <i class="fas fa-angle-right"></i></span>
+          </a>
+          <ul class="sidebar-dropdown">
+            <li>
+              <a class="side-links" href="timeline.html"> Timeline</a>
+            </li>
+            <li>
+              <a class="side-links" href="error.html"> 404</a>
+            </li>
+            <li>
+              <a class="side-links" href="blank-page.html"> Blank Page</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a class="side-links" href="charts.html"
+            ><i class="fa fa-pie-chart"></i><span>Charts</span></a
+          >
+        </li>
+        <li>
+          <a class="side-links" href="Gantt-chart.html"
+          ><i class="fas fa-chart-bar"></i><span>Gantt Chart</span></a
+        > 
+        </li>
+        <li>
+          <a class="side-links" href="pricing.html"
+            ><i class="fa fa-table"></i><span>Pricing tables</span></a
+          >
+        </li>
+        <li>
+          <a class="side-links open-side-dropdown"
+            ><i class="fa far fa-envelope"></i
+            ><span>Mailbox <i class="fas fa-angle-right"></i></span
+          ></a>
+          <ul class="sidebar-dropdown">
+            <li>
+              <a class="side-links" href="inbox.html"> Inbox</a>
+            </li>
+            <li>
+              <a class="side-links"> Compose Mail</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a class="side-links" href="blocks.html"
+            ><i class="fa fa-th"></i>
+            <span> content blocks </span>
+          </a>
+        </li>
+        <li>
+          <a class="side-links" href="faq.html"
+            ><i class="fa far fa-question-circle"></i><span>Faq's</span></a
+          >
+        </li>
+        <li>
+          <a class="side-links open-side-dropdown"
+            ><i class="fas fa-user"></i><span>User <i class="fas fa-angle-right"></i></span></a
+          >
+          <ul class="sidebar-dropdown">
+            <li>
+              <a class="side-links" href="login.html"> Login</a>
+            </li>
+            <li>
+              <a class="side-links" href="register.html">Sign Up</a>
+            </li>
+            <li>
+              <a class="side-links" href="forgot-password.html">Forgot Password</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a class="side-links" href="forms.html"
+            ><i class="fas fa-file-alt"></i><span>Forms</span></a
+          >
+        </li>
+          <a class="MaxsideBarBtn transitionLinear rotate180">
+            <i class="fas fa-angle-double-right"></i>
+          </a>
+        </li>
+      </ul>
+
+      
+    </div>
+    <!-- sidebar ends here  -->
+    <!-- navbar starts here  -->
+    <nav class="navbar shadow navbar-expand-lg navbar-light bg-white">
+      <div class="container-fluid justify-content-end">
+        <button class="collapse-sidebar">
+          <i class="fas fa-angle-double-right"></i>
+        </button>
+        <form class="d-flex">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success" type="submit">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+        <div class="profile-detail d-flex ms-4">
+          <div class="left">
+            <ul class="d-flex">
+              <!-- notifications -->
+              <li class="profile-left-list position-relative">
+                <a class="position-relative openNotification me-3">
+                  <i class="far fa-bell"></i>
+                  <span class="position-absolute top-0 start-100 badge">
+                    4
+                  </span>
+                </a>
+                <!-- notification dropdown -->
+                <ul
+                  class="
+                    bg-white
+                    notificationDropdown
+                    profileDropdown
+                    overflow-hidden
+                  "
+                >
+                  <li class="w-100">
+                    <div class="header">
+                      <h3 class="m-0 line1">You Have 4 New Notifications</h3>
+                    </div>
+                  </li>
+                  <li class="notificationMsg">
+                    <a href="#" class="d-flex align-items-center">
+                      <div class="user-img">
+                        <img src="./img/avatar1.jpg" alt="" />
+                      </div>
+                      <div class="desc flex-grow-1">
+                        <p class="m-0 line1">Johnson purchased template</p>
+                        <span>Just Now</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="notificationMsg">
+                    <a href="#" class="d-flex align-items-center">
+                      <div class="user-img">
+                        <img src="./img/avatar2.jpg" alt="" />
+                      </div>
+                      <div class="desc flex-grow-1">
+                        <p class="m-0 line1">New customer registered</p>
+                        <span>1 hour ago</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="notificationMsg seeMore overflow-hidden">
+                    <a href="#" class="d-flex align-items-center">
+                      <div class="user-img">
+                        <img src="./img/avatar3.jpg" alt="" />
+                      </div>
+                      <div class="desc flex-grow-1">
+                        <p class="m-0 line1">Lorem ipsum dolor sit amet</p>
+                        <span>2 hours ago</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="notificationMsg seeMore overflow-hidden">
+                    <a href="#" class="d-flex align-items-center">
+                      <div class="user-img">
+                        <img src="./img/avatar1.jpg" alt="" />
+                      </div>
+                      <div class="desc flex-grow-1">
+                        <p class="m-0 line1">New customer registered</p>
+                        <span>3 hours ago</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li
+                    class="notificationBottom notificationseemore bg-blue hide"
+                  >
+                    <a href="#" class=""> See all </a>
+                  </li>
+                </ul>
+              </li>
+              <!-- comment  -->
+              <li class="profile-left-list position-relative">
+                <a class="position-relative openComment me-3">
+                  <i class="far fa-comment"></i>
+                  <span class="position-absolute top-0 start-100 badge">
+                    3
+                  </span>
+                </a>
+                <!-- comment dropdown -->
+                <ul
+                  class="
+                    bg-white
+                    commentDropdown
+                    profileDropdown
+                    overflow-hidden
+                  "
+                >
+                  <li class="w-100">
+                    <div class="header">
+                      <h3 class="m-0 line1">You Have 3 New Messages</h3>
+                    </div>
+                  </li>
+                  <li class="notificationMsg">
+                    <a href="#" class="d-flex align-items-center">
+                      <div class="user-img">
+                        <img src="./img/avatar1.jpg" alt="" />
+                      </div>
+                      <div class="desc flex-grow-1">
+                        <p class="m-0 line1">Johnson purchased template</p>
+                        <span>Just Now</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="notificationMsg">
+                    <a href="#" class="d-flex align-items-center">
+                      <div class="user-img">
+                        <img src="./img/avatar2.jpg" alt="" />
+                      </div>
+                      <div class="desc flex-grow-1">
+                        <p class="m-0 line1">New customer registered</p>
+                        <span>1 hour ago</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="notificationMsg seeMore overflow-hidden">
+                    <a href="#" class="d-flex align-items-center">
+                      <div class="user-img">
+                        <img src="./img/avatar3.jpg" alt="" />
+                      </div>
+                      <div class="desc flex-grow-1">
+                        <p class="m-0 line1">Lorem ipsum dolor sit amet</p>
+                        <span>2 hours ago</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="notificationBottom commentseemore bg-blue hide">
+                    <a href="#" class=""> See all </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <!-- profile  -->
+          <div class="right position-relative">
+            <a class="me-3 position-relative openProfile">
+              <img src="./img/profileimg.jpg" alt="profileimg" />
+              <span class="position-absolute top-0 start-100 badge"> </span>
+            </a>
+            <!-- profile dropdown -->
+            <ul class="bg-white mainprofileDropdown overflow-hidden">
+              <li class="user bg-blue text-white">
+                <h5 class="fw-bolder">John Deo</h5>
+                <span class="ms-2">Available</span>
+              </li>
+              <li class="profilelist">
+                <a href="#" class="d-flex align-items-center">
+                  <i class="fas fa-user text-blue"></i>
+                  My Profile
+                </a>
+              </li>
+              <li class="profilelist">
+                <a href="#" class="d-flex align-items-center">
+                  <i class="fas fa-user-friends text-blue"></i>
+                  1k Followers
+                </a>
+              </li>
+              <li class="profilelist">
+                <a href="#" class="d-flex align-items-center">
+                  <i class="fas fa-cog text-blue"></i>
+                  Setting
+                </a>
+              </li>
+              <li class="profilelist">
+                <a href="#" class="d-flex align-items-center">
+                  <i class="fas fa-heart text-blue"></i>
+                  100 Likes
+                </a>
+              </li>
+              <li class="profilelist">
+                <a href="#" class="d-flex align-items-center">
+                  <i class="fas fa-power-off text-blue"></i>
+                  Logout
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar ends here  -->
+    <!-- scroll btn starts here  -->
+    <button class="scrollTopBtn">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+    <!-- scroll btn ends here  -->
+    <!-- main content starts here -->
+    <div class="main-content">
+      <div class="container-fluid main-inner">
+          <div class="card">
+              <div class="cardHeading card-header">
+                  <h3>
+                     Mailing 
+                  </h3>
+              </div>
+              <div class="card-body">
+                  <div class="main-mail">
+                      <!-- main-sidebar  -->
+                      <div class="mail-sidebar">
+                        <div class="mail-options">
+                            <ul>
+                                <li>
+                                    <a class="text-center bg-blue text-white composeBtn" data-bs-toggle="modal" data-bs-target="#ComposeModal"> <i class="fas fa-external-link-alt"></i> Compose Mail</a>
+                                </li>
+                                <li>
+                                  <a href="" class="mailOptLink active">
+                                    <i class="fas  fa-envelope-open"></i>
+                                    Inbox
+                                    <span class="mailOptBadge">3</span>
+                                  </a>
+                                </li>
+                                <li><a href="" class="mailOptLink">
+                                  <i class="fas fa-edit"></i>
+                                  Drafts
+                                  <span class="mailOptBadge">20</span>
+                                </a></li>
+                                <li>
+                                  <a href="" class="mailOptLink">
+                                    <i class="fas fa-paper-plane"></i>
+                                    Sent
+                                    <span class="mailOptBadge">800</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="" class="mailOptLink">
+                                    <i class=" fas fa-trash-alt"></i>
+                                    Trash
+                                    <span class="mailOptBadge">10</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="" class="mailOptLink">
+                                    <i class="fas fa-ban"></i>
+                                    Spam
+                                    <span class="mailOptBadge">1000+</span>
+                                  </a>
+                                </li>
+                                <li class="position-relative">
+                                  <a class="mail-categories mailOptLink">
+                                    <i class="fas fa-angle-right transitionLinear" style="text-align:center;margin-left:-6px;"></i>
+                                    Categories
+                                  </a>
+                                  <!-- categories dropdown  -->
+                                  <ul class="ps-2 overflow-hidden transitionLinear  mailOptDropDown">
+                                    <li>
+                                      <a href="" class="mailOptLink">
+                                        <i class=" fas fa-users"></i>
+                                        Socials
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="" class="mailOptLink">
+                                        <i class="fas  fa-edit"></i>
+                                        Updates
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="" class="mailOptLink">
+                                        <i class="fas fa-tag"></i>
+                                        Promotions
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </li>
+                                <li>
+                                  <a href="" class="mailOptLink">
+                                    <i class="fas fa-user"></i>
+                                    Personal
+                                  </a>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                      </div>
+                        <!-- mail-message  -->
+                      <div class="mail-messages">
+                          <div class="row">
+                            <div class="col-12">
+                              <div class="card">
+                                <div class="card-body overflow-hidden ">
+                                    <div class="messageContent pb-4 d-flex">
+                                        <h4 class="m-0">There are many variations of passages of Lorem Ipsum available
+                                        </h4>
+                                        <div >
+                                            <a class="fas fa-trash"></a>
+                                            <a class="fas fa-ellipsis-v"></a>
+                                        </div>
+                                    </div>
+                                    <div class="messageConv py-4 p-lg-4">
+                                        <div class="msgHead d-flex ">
+                                            <div class="avatar me-3">
+                                                <img src="./img/avatar1.jpg" alt="img">
+                                            </div>
+                                            <div class="nametime">
+                                                <div class="d-flex justify-content-between flex-wrap" >
+                                                    <h4>Client 1</h4>
+                                                    <span class="time">Feb 11, 2020 at 1:19 pm</span>
+                                                </div>
+                                                <p class="mail line1">
+                                                    client@domain.com
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="msgBody">
+                                            <p class="mt-4 text-para mb-0">Faucibus rutrum. Phasellus sodales vulputate urna, vel accumsan augue egestas ac. Donec vitae leo at sem lobortis porttitor eu conse quat risus. Mauris sed congue orci. Donec ultrices faucibus rutrum. Phasellus sodales vulputate urna, vel accumsan augue.
+
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="messageConv py-4 p-lg-4">
+                                        <div class="msgHead d-flex ">
+                                            <div class="avatar me-3">
+                                                <img src="./img/avatar2.jpg" alt="img">
+                                            </div>
+                                            <div class="nametime">
+                                                <div class="d-flex justify-content-between flex-wrap" >
+                                                    <h4>Myself</h4>
+                                                    <span class="time">Feb 11, 2020 at 1:19 pm</span>
+                                                </div>
+                                                <p class="mail">
+                                                    Me
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="msgBody">
+                                            <p class="mt-4 text-para mb-0">Faucibus rutrum. Phasellus sodales vulputate urna, vel accumsan augue egestas ac. Donec vitae leo at sem lobortis porttitor eu conse quat risus. Mauris sed congue orci. Donec ultrices faucibus rutrum. Phasellus sodales vulputate urna, vel accumsan augue.
+
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="messageConv py-4 p-lg-4">
+                                        <div class="msgHead d-flex ">
+                                            <div class="avatar me-3">
+                                                <img src="./img/avatar1.jpg" alt="img">
+                                            </div>
+                                            <div class="nametime">
+                                                <div class="d-flex justify-content-between flex-wrap" >
+                                                    <h4>Client 1</h4>
+                                                    <span class="time">Feb 11, 2020 at 1:19 pm</span>
+                                                </div>
+                                                <p class="mail line1">
+                                                    client@domain.com
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="msgBody">
+                                            <p class="mt-4 text-para mb-0">Faucibus rutrum. Phasellus sodales vulputate urna, vel accumsan augue egestas ac. Donec vitae leo at sem lobortis porttitor eu conse quat risus. Mauris sed congue orci. Donec ultrices faucibus rutrum. Phasellus sodales vulputate urna, vel accumsan augue.
+
+                                            </p>
+                                        </div>
+                                        <div class="attachments" >
+                                            <div class="attachmentList mt-4">
+                                                <span > 2 attachment</span>
+                                                <a href="./img/attachment1.jpg" download>
+                                                    <i class="fas fas fa-download"></i>
+                                                    Download
+                                                </a>
+                                            </div>
+                                            <div class="attachment mt-4 d-inline-flex flex-wrap">
+                                                <img src="./img/attachment1.jpg" alt="img">
+                                                <img src="./img/attachment2.jpg" alt="img">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="messageReply px-md-4">
+                                        <div class="form-group mb-3">
+                                            <textarea class="form-control " id="exampleInputTextarea" placeholder="Enter your message" spellcheck="false"></textarea>
+                                        </div>
+                                        <div class="replyBtns">
+                                            <button type="button" class="me-3">Reply</button>
+                                            <div class="form-group  m-0">
+                                                <input name="attachment" id="attachment" type="file" class="d-none">
+                                                <label for="attachment" class="text-purple"><span class="fa fa-paperclip me-2 "></span>Attachment
+                                                </label>
+                                              </div>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+
+
+                      <!-- compose modal -->
+                      <div class="modal fade" id="ComposeModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                          <div class="modal-content">
+                            <form >
+
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Compose New Message
+                                    </h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <!-- Send   -->
+                                    <div class="form-group mb-3">
+                                        <label for="Inputsendto" class="inputLabel">Send to :</label>
+                                        <input type="text" class="form-control " id="Inputsendto" placeholder="examplemail@mail.com">
+                                    </div>
+                                    <!-- subject  -->
+                                    <div class="form-group mb-3">
+                                        <label for="Inputsubject" class="inputLabel">Subject :</label>
+                                        <input type="text" class="form-control " id="Inputsubject" placeholder="Subject">
+                                    </div>
+                                    <!-- Message  -->
+                                    <div class="form-group mb-3">
+                                        <label for="message" class="inputLabel">Message :</label>
+                                        <textarea class="form-control" id="message" ></textarea>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="submit" class="closeBtn" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="">Send</button>
+                                </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                      
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+    <!-- main content ends here -->
+    <!-- script  -->
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/fontawesome.js"></script>
+    <script src="./js/header.js"></script>
+    <script src="./js/inbox.js"></script>
+  </body>
+</html>

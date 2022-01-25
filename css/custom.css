@@ -1,0 +1,157 @@
+:root {
+  --black: #303030;
+  --white: #fff;
+  --blue: #4755ab;
+  --purple: #b162ac;
+  --lime: #03c895;
+  --lred: #ff4f81;
+  --light:#E7EDF6;
+  --paraColor:#5d6b71;
+}
+/* Style css starts */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+img,
+img:focus {
+  user-select: none;
+  outline: none;
+}
+body {
+  font-family: "Nunito Sans", sans-serif;
+
+}
+ul,
+ol {
+  padding: 0px;
+  list-style: none;
+  margin: 0;
+}
+p {
+  margin-bottom: 15px;
+  font-weight: 500;
+  font-size: 15px;
+}
+a,
+a:hover,
+a:focus {
+  text-decoration: none !important;
+  outline: none;
+}
+button,
+button:focus,
+button:active {
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+a,
+img {
+  outline: none;
+}
+input,
+input:focus,
+textarea,
+textarea:focus,
+select,
+select:focus,.input:hover {
+  outline: none;
+  outline: none !important;
+  box-shadow: none !important;
+  background: none !important;
+  border: none !important;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.fw-500 {
+  font-weight: 500 !important;
+}
+.transitionLinear {
+  transition: all 0.3s linear !important;
+}
+.text-blue {
+  color: var(--blue) !important;
+}
+.bg-blue{
+  background: var(--blue) !important;
+  color: white !important;
+}
+.text-purple {
+  color: var(--purple) !important;
+}
+.bg-purple{
+  background: var(--purple) !important;
+}
+.text-para{
+  color: var(--paraColor) !important;
+}
+.text-lime {
+  color: var(--lime) !important;
+}
+.text-lred {
+  color: var(--lred) !important;
+}
+.text-muted {
+  color: #6c757d !important ;
+}
+.bg-light{
+  background: var(--light) !important;
+}
+.line1{
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.line2{
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.line3{
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.customCardHeader{
+font-size: 20px;
+border-bottom: 1px solid #eee;
+
+}
+.customCardShadow{
+  box-shadow:  0 1px 2px 1px rgba(154, 154, 204, .22);
+}
+.CardHeading {
+  padding: 30px 20px;
+  background: #fff;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eee;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.CardHeading h3{
+  font-size: 22px;
+  line-height: 27px;
+  font-weight: 600;
+  color: var(--blue);
+  margin: 0;
+}
+.CardHeading h3 span{
+  font-weight: normal;
+  color: var(--paraColor);
+}

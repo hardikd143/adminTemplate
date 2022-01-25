@@ -1,0 +1,118 @@
+@media screen and (max-width: 500px) {
+  .main-inner {
+    padding: 0 !important;
+  }
+}
+.blockTitle {
+  font-size: 30px;
+  line-height: 35px;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+.card p.text-para {
+  font-size: 16px;
+}
+.btnStyled {
+  font-size: 16px;
+  line-height: 25px;
+  padding: 10px 25px;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  background: var(--blue);
+  border-radius: 5px;
+  font-weight: 400;
+  transition: all 0.2s linear;
+  text-transform: capitalize;
+  border: 1px solid var(--blue);
+}
+.btnStyled:hover {
+  color: white;
+  background: #3c4890;
+  border-color: #3c4890;
+}
+.btnStyled.outlined {
+  background: none;
+  color: var(--blue);
+}
+.btnStyled.outlined:hover {
+  color: white;
+  background: var(--blue);
+}
+.blockList {
+  list-style-type: disc;
+  padding-left: 40px !important;
+}
+.blockList li {
+  font-size: 16px;
+  line-height: 25px;
+  color: var(--paraColor);
+  margin-bottom: 5px;
+}
+p.gridPara {
+  color: #2c3038;
+  line-height: 25px;
+  font-size: 18px;
+  margin: 10px 0 8px 0;
+  font-weight: 700;
+}
+h3.contetPicTitle {
+  max-width: 555px;
+  font-size: 35px;
+  line-height: 40px;
+  color: #2c3038;
+  font-weight: 600;
+}
+
+.featureGrid h4 {
+  font-size: 20px;
+  line-height: 25px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.featureGrid p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--paraColor);
+}
+.ContentIconBlocks span {
+  padding: 0;
+  font-size: 36px;
+  color: var(--blue);
+}
+.ContentIconBlocks h4 {
+  font-size: 25px;
+  line-height: 30px;
+  color: #2c3038;
+  padding-top: 25px;
+  font-weight: 700;
+}
+
+.ContentIconBlocks p {
+  font-size: 16px;
+  line-height: 25px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+.ContentIconBlocks a.readmore {
+  font-size: 16px;
+  line-height: 25px;
+  color: var(--blue);
+  display: inline-block;
+  font-weight: 600;
+}
+.ContentIconBlocks i {
+  color: var(--blue);
+  font-size: 32px;
+  display: block;
+  margin-bottom: 10px;
+}
+.ContentIconBlocks h5.title {
+  margin-bottom: 5px;
+  font-size: 20px;
+  line-height: 25px;
+  color: #2c3038;
+  font-weight: bold;
+}

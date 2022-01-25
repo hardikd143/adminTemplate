@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ</title>
+    <!-- css  -->
+    <link rel="stylesheet" href="./css/custom.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/faq.css" />
+    <link rel="stylesheet" href="./css/font.css" />
+  </head>
+  <body>
+    <!-- sidebar starts here  -->
+    <div class="sidebar bg-white">
+      <div class="logo-icon position-relative">
+        <a class="side-links" href="index.html">
+          <img src="./img/logo.png" alt="logo" />
+        </a>
+        <a class="position-absolute top-0 end-0 MiniSidebarBtn transitionLinear">
+          <i class="fas fa-times"></i>
+        </a>
+      </div>
+      <ul class="sidebar-list">
+        <li class="Sidesearch">
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+        </li>
+        <li>
+          <a class="side-links" href="index.html"
+            ><i class="fa fa-tachometer"></i><span>Dashboard</span></a
+          >
+        </li>
+        <li>
+          <a class="side-links open-side-dropdown"
+            ><i class="fa fa-cogs"></i>
+            <span>Elements <i class="fas fa-angle-right"></i></span>
+          </a>
+          <ul class="sidebar-dropdown">
+            <li>
+              <a class="side-links" href="carousels.html"> Carousels</a>
+            </li>
+            <li>
+              <a class="side-links" href="cards.html"> Default cards</a>
+            </li>
+            <li>
+              <a class="side-links" href="people.html"> People cards</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a class="side-links open-side-dropdown"
+            ><i class="fas fa-book"></i>
+            <span>More Pages <i class="fas fa-angle-right"></i></span>
+          </a>
+          <ul class="sidebar-dropdown">
+            <li>
+              <a class="side-links" href="timeline.html"> Timeline</a>
+            </li>
+            <li>
+              <a class="side-links" href="error.html"> 404</a>
+            </li>
+            <li>
+              <a class="side-links" href="blank-page.html"> Blank Page</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a class="side-links" href="charts.html"
+            ><i class="fa fa-pie-chart"></i><span>Charts</span></a
+          >
+        </li>
+        <li>
+          <a class="side-links" href="Gantt-chart.html"
+          ><i class="fas fa-chart-bar"></i><span>Gantt Chart</span></a
+        > 
+        </li>
+        <li>
+          <a class="side-links" href="pricing.html"
+            ><i class="fa fa-table"></i><span>Pricing tables</span></a
+          >
+        </li>
+        <li>
+          <a class="side-links open-side-dropdown"
+            ><i class="fa far fa-envelope"></i
+            ><span>Mailbox <i class="fas fa-angle-right"></i></span
+          ></a>
+          <ul class="sidebar-dropdown">
+            <li>
+              <a class="side-links" href="inbox.html"> Inbox</a>
+            </li>
+            <li>
+              <a class="side-links"> Compose Mail</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a class="side-links" href="blocks.html"
+            ><i class="fa fa-th"></i>
+            <span> content blocks </span>
+          </a>
+        </li>
+        <li>
+          <a class="side-links" href="faq.html"
+            ><i class="fa far fa-question-circle"></i><span>Faq's</span></a
+          >
+        </li>
+        <li>
+          <a class="side-links open-side-dropdown"
+            ><i class="fas fa-user"></i><span>User <i class="fas fa-angle-right"></i></span></a
+          >
+          <ul class="sidebar-dropdown">
+            <li>
+              <a class="side-links" href="login.html"> Login</a>
+            </li>
+            <li>
+              <a class="side-links" href="register.html">Sign Up</a>
+            </li>
+            <li>
+              <a class="side-links" href="forgot-password.html">Forgot Password</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a class="side-links" href="forms.html"
+            ><i class="fas fa-file-alt"></i><span>Forms</span></a
+          >
+        </li>
+          <a class="MaxsideBarBtn transitionLinear rotate180">
+            <i class="fas fa-angle-double-right"></i>
+          </a>
+        </li>
+      </ul>
+
+      
+    </div>
+    <!-- sidebar ends here  -->
+    <!-- navbar starts here  -->
+    <nav class="navbar shadow navbar-expand-lg navbar-light bg-white">
+      <div class="container-fluid justify-content-end">
+        <button class="collapse-sidebar">
+          <i class="fas fa-angle-double-right"></i>
+        </button>
+        <form class="d-flex">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success" type="submit">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+        <div class="profile-detail d-flex ms-4">
+          <div class="left">
+            <ul class="d-flex">
+              <!-- notifications -->
+              <li class="profile-left-list position-relative">
+                <a class="position-relative openNotification me-3">
+                  <i class="far fa-bell"></i>
+                  <span class="position-absolute top-0 start-100 badge">
+                    4
+                  </span>
+                </a>
+                <!-- notification dropdown -->
+                <ul
+                  class="
+                    bg-white
+                    notificationDropdown
+                    profileDropdown
+                    overflow-hidden
+                  "
+                >
+                  <li class="w-100">
+                    <div class="header">
+                      <h3 class="m-0 line1">You Have 4 New Notifications</h3>
+                    </div>
+                  </li>
+                  <li class="notificationMsg">
+                    <a href="#" class="d-flex align-items-center">
+                      <div class="user-img">
+                        <img src="./img/avatar1.jpg" alt="" />
+                      </div>
+                      <div class="desc flex-grow-1">
+                        <p class="m-0 line1">Johnson purchased template</p>
+                        <span>Just Now</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="notificationMsg">
+                    <a href="#" class="d-flex align-items-center">
+                      <div class="user-img">
+                        <img src="./img/avatar2.jpg" alt="" />
+                      </div>
+                      <div class="desc flex-grow-1">
+                        <p class="m-0 line1">New customer registered</p>
+                        <span>1 hour ago</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="notificationMsg seeMore overflow-hidden">
+                    <a href="#" class="d-flex align-items-center">
+                      <div class="user-img">
+                        <img src="./img/avatar3.jpg" alt="" />
+                      </div>
+                      <div class="desc flex-grow-1">
+                        <p class="m-0 line1">Lorem ipsum dolor sit amet</p>
+                        <span>2 hours ago</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="notificationMsg seeMore overflow-hidden">
+                    <a href="#" class="d-flex align-items-center">
+                      <div class="user-img">
+                        <img src="./img/avatar1.jpg" alt="" />
+                      </div>
+                      <div class="desc flex-grow-1">
+                        <p class="m-0 line1">New customer registered</p>
+                        <span>3 hours ago</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li
+                    class="notificationBottom notificationseemore bg-blue hide"
+                  >
+                    <a href="#" class=""> See all </a>
+                  </li>
+                </ul>
+              </li>
+              <!-- comment  -->
+              <li class="profile-left-list position-relative">
+                <a class="position-relative openComment me-3">
+                  <i class="far fa-comment"></i>
+                  <span class="position-absolute top-0 start-100 badge">
+                    3
+                  </span>
+                </a>
+                <!-- comment dropdown -->
+                <ul
+                  class="
+                    bg-white
+                    commentDropdown
+                    profileDropdown
+                    overflow-hidden
+                  "
+                >
+                  <li class="w-100">
+                    <div class="header">
+                      <h3 class="m-0 line1">You Have 3 New Messages</h3>
+                    </div>
+                  </li>
+                  <li class="notificationMsg">
+                    <a href="#" class="d-flex align-items-center">
+                      <div class="user-img">
+                        <img src="./img/avatar1.jpg" alt="" />
+                      </div>
+                      <div class="desc flex-grow-1">
+                        <p class="m-0 line1">Johnson purchased template</p>
+                        <span>Just Now</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="notificationMsg">
+                    <a href="#" class="d-flex align-items-center">
+                      <div class="user-img">
+                        <img src="./img/avatar2.jpg" alt="" />
+                      </div>
+                      <div class="desc flex-grow-1">
+                        <p class="m-0 line1">New customer registered</p>
+                        <span>1 hour ago</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="notificationMsg seeMore overflow-hidden">
+                    <a href="#" class="d-flex align-items-center">
+                      <div class="user-img">
+                        <img src="./img/avatar3.jpg" alt="" />
+                      </div>
+                      <div class="desc flex-grow-1">
+                        <p class="m-0 line1">Lorem ipsum dolor sit amet</p>
+                        <span>2 hours ago</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="notificationBottom commentseemore bg-blue hide">
+                    <a href="#" class=""> See all </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <!-- profile  -->
+          <div class="right position-relative">
+            <a class="me-3 position-relative openProfile">
+              <img src="./img/profileimg.jpg" alt="profileimg" />
+              <span class="position-absolute top-0 start-100 badge"> </span>
+            </a>
+            <!-- profile dropdown -->
+            <ul class="bg-white mainprofileDropdown overflow-hidden">
+              <li class="user bg-blue text-white">
+                <h5 class="fw-bolder">John Deo</h5>
+                <span class="ms-2">Available</span>
+              </li>
+              <li class="profilelist">
+                <a href="#" class="d-flex align-items-center">
+                  <i class="fas fa-user text-blue"></i>
+                  My Profile
+                </a>
+              </li>
+              <li class="profilelist">
+                <a href="#" class="d-flex align-items-center">
+                  <i class="fas fa-user-friends text-blue"></i>
+                  1k Followers
+                </a>
+              </li>
+              <li class="profilelist">
+                <a href="#" class="d-flex align-items-center">
+                  <i class="fas fa-cog text-blue"></i>
+                  Setting
+                </a>
+              </li>
+              <li class="profilelist">
+                <a href="#" class="d-flex align-items-center">
+                  <i class="fas fa-heart text-blue"></i>
+                  100 Likes
+                </a>
+              </li>
+              <li class="profilelist">
+                <a href="#" class="d-flex align-items-center">
+                  <i class="fas fa-power-off text-blue"></i>
+                  Logout
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar ends here  -->
+    <!-- scroll btn starts here  -->
+    <button class="scrollTopBtn">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+    <!-- scroll btn ends here  -->
+    <!-- main content starts here -->
+    <div class="main-content">
+      <div class="container-fluid main-inner">
+          <div class="card p-1 border-0 customCardShadow">
+              <div class="CardHeading">
+                  <h3>Faq Block
+                </h3>
+              </div>
+              <div class="card-body">
+                  <div class="row">
+                      <div class="col-12 col-sm-10 m-auto">
+                          <div class="wrapper">
+                            <div class="que ">
+                              <span class="quenum">1</span>
+                              <h2 class="line1">
+                                On the other hand, we denounce with righteous?
+                              </h2>
+                              <span class="arrow"></span>
+                            </div>
+                            <div class="ans">
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates amet earum velit nobis aliquam laboriosam nihil debitis facere voluptatibus consectetur quae quasi fuga, ad corrupti libero omnis sapiente non assumenda excepturi aperiam animi vitae eos nisi laudantium. Tempore reiciendis ipsam culpa, qui voluptates eveniet, incidunt officiis eaque iste minima autem.
+                                </p>
+                            </div>
+                          </div>
+                          <div class="wrapper">
+                            <div class="que ">
+                                <span class="quenum">2</span>
+                                <h2 class="line1">
+                                    At vero eos et accusamus et iusto odio dignissimos
+                                </h2>
+                                <span class="arrow"></span>
+                            </div>
+                            <div class="ans">
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates amet earum velit nobis aliquam laboriosam nihil debitis facere voluptatibus consectetur quae quasi fuga, ad corrupti libero omnis sapiente non assumenda excepturi aperiam animi vitae eos nisi laudantium. Tempore reiciendis ipsam culpa, qui voluptates eveniet, incidunt officiis eaque iste minima autem.
+                                </p>
+                            </div>
+                          </div>
+                          <div class="wrapper">
+                            <div class="que ">
+                                <span class="quenum">3</span>
+                                <h2 class="line1">
+                                    But I must explain to you how all this mistaken idea?
+                                </h2>
+                                <span class="arrow"></span>
+                            </div>
+                            <div class="ans">
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates amet earum velit nobis aliquam laboriosam nihil debitis facere voluptatibus consectetur quae quasi fuga, ad corrupti libero omnis sapiente non assumenda excepturi aperiam animi vitae eos nisi laudantium. Tempore reiciendis ipsam culpa, qui voluptates eveniet, incidunt officiis eaque iste minima autem.
+                                </p>
+                            </div>
+                          </div>
+                          <div class="wrapper">
+                            <div class="que ">
+                                <span class="quenum">4</span>
+                                <h2 class="line1">
+                                    Sed ut perspiciatis unde omnis?
+                                </h2>
+                                <span class="arrow"></span>
+                            </div>
+                            <div class="ans">
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates amet earum velit nobis aliquam laboriosam nihil debitis facere voluptatibus consectetur quae quasi fuga, ad corrupti libero omnis sapiente non assumenda excepturi aperiam animi vitae eos nisi laudantium. Tempore reiciendis ipsam culpa, qui voluptates eveniet, incidunt officiis eaque iste minima autem.
+                                </p>
+                            </div>
+                          </div>
+                          <div class="wrapper">
+                            <div class="que ">
+                                <span class="quenum">5</span>
+                                <h2 class="line1">
+                                    The standard chunk of Lorem Ipsum used since the 1500s?
+                                </h2>
+                                <span class="arrow"></span>
+                            </div>
+                            <div class="ans">
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates amet earum velit nobis aliquam laboriosam nihil debitis facere voluptatibus consectetur quae quasi fuga, ad corrupti libero omnis sapiente non assumenda excepturi aperiam animi vitae eos nisi laudantium. Tempore reiciendis ipsam culpa, qui voluptates eveniet, incidunt officiis eaque iste minima autem.
+                                </p>
+                            </div>
+                          </div>
+                          <div class="wrapper">
+                            <div class="que ">
+                                <span class="quenum">6</span>
+                                <h2 class="line1">
+                                    There are many variations of passages of Lorem Ipsum available, but the majority?
+                                </h2>
+                                <span class="arrow"></span>
+                            </div>
+                            <div class="ans">
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates amet earum velit nobis aliquam laboriosam nihil debitis facere voluptatibus consectetur quae quasi fuga, ad corrupti libero omnis sapiente non assumenda excepturi aperiam animi vitae eos nisi laudantium. Tempore reiciendis ipsam culpa, qui voluptates eveniet, incidunt officiis eaque iste minima autem.
+                                </p>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+    <!-- main content ends here -->
+    <!-- script  -->
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/fontawesome.js"></script>
+    <script src="./js/header.js"></script>
+    <script src="./js/faq.js"></script>
+  </body>
+</html>

@@ -1,0 +1,425 @@
+@media screen and (max-width: 500px) {
+  .main-inner {
+    padding: 0 !important;
+  }
+}
+.cardHeading {
+  padding: 30px 20px;
+  background: #fff;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eee;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.cardHeading h3 {
+  margin: 0;
+  font-size: 22px;
+  line-height: 27px;
+  font-weight: 600;
+}
+.main-mail {
+  display: grid;
+  grid-template-columns: 250px auto;
+  grid-gap: 30px;
+}
+@media screen and (max-width: 1000px) {
+  .main-mail {
+    display: flex;
+    flex-direction: column;
+  }
+  /* .main-mail > div{
+    width: 100% !important;
+  } */
+}
+/* .main-mail .mail-sidebar {
+  max-width: 250px !important;
+} */
+.mail-sidebar a {
+  /* width: 100%; */
+  display: block;
+  text-decoration: none;
+}
+a.composeBtn {
+  height: 48px;
+  line-height: 48px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.mail-options a.mailOptLink {
+  height: 35px !important;
+  line-height: 35px;
+  color: #777777;
+  font-size: 14px;
+  padding: 0px 12px;
+  border-radius: 5px;
+  border-bottom: 2px solid #fff;
+}
+.mail-options a.mailOptLink:hover {
+  background: #f8f9fa;
+}
+.mail-options a.mailOptLink.active {
+  color: var(--blue);
+  background: rgba(245, 115, 238, 0.1);
+}
+.mail-options a.mailOptLink.active .mailOptBadge {
+  background: var(--blue);
+  color: white;
+}
+.mail-options a.mailOptLink i {
+  width: 20px;
+  line-height: 20px;
+}
+.mail-options a span.mailOptBadge {
+  background: rgba(71, 90, 171, 0.11);
+
+  line-height: 22px;
+  padding: 0 10px;
+  color: #777;
+  font-weight: 600;
+  border-radius: 50px;
+  float: right;
+  font-size: 12px;
+  margin: 6px 0 4px 5px;
+}
+.mail-options .mail-categories {
+  background: #f8f9fa;
+}
+.mail-options .mailOptDropDown {
+  height: 0px;
+}
+
+/* mail-message  */
+.mail-messages .card-heading {
+  font-size: 16px !important;
+  border-bottom: 1px solid #eee;
+  font-weight: 600;
+}
+.mail-messages .card-heading i {
+  width: 25px;
+  line-height: 20px;
+}
+@media screen and (max-width: 1310px) {
+  .msgFuncs .row {
+    flex-direction: column;
+  }
+  .msgFuncs .row > div {
+    width: 100%;
+  }
+}
+.msgFuncBtn .funcButton {
+  opacity: 0.8;
+  border-radius: 5px;
+  padding: 0 12px;
+  line-height: 33px;
+  font-size: 14px;
+  background: #fdecfd;
+  margin-bottom: 5px;
+  color: #212529;
+}
+.msgFuncBtn .funcButton:hover {
+  opacity: 1 !important;
+}
+.msgFuncBtn label.selectAllMsg {
+  user-select: none;
+}
+.msgNums {
+  line-height: 33px;
+  font-size: 14px;
+}
+.msgNums button {
+  line-height: 33px;
+  width: 33px;
+  color: #212529;
+  background: #fdecfd;
+  opacity: 0.8;
+  font-size: 16px;
+  border-radius: 5px;
+}
+.msgNums button:hover {
+  opacity: 1;
+}
+
+/* inbox msgs  */
+table.inbox-msgs td {
+  border-top: 1px solid #eee;
+  padding: 7px 16px;
+}
+table.inbox-msgs td:hover{
+  background: #E7EDF6;
+}
+table.inbox-msgs td .d-flex > div {
+  margin: 2px 0;
+}
+.selectMail {
+  min-width: 20px;
+}
+.msgSender {
+  min-width: 140px;
+  font-weight: bold;
+}
+a[href^="inbox"] {
+  color: var(--black);
+}
+.mainMsg {
+  /* min-width: 240px; */
+  flex-grow: 1;
+  /* min-width: 240px !important; */
+}
+.mainMsg p {
+  overflow: hidden;
+  font-size: 14px;
+  text-overflow: ellipsis;
+  margin: 0;
+}
+.time {
+  min-width: 45px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 10px;
+}
+.time h6 {
+  margin: 0;
+  font-weight: bold;
+  font-size: 12px;
+}
+.msgOptions {
+  width: 22px;
+  margin: 2px 0;
+  text-align: center;
+}
+.msgOptions i {
+  font-size: 14px;
+  width: 100%;
+  line-height: 22px;
+}
+.msgOptions .msgOptDropDown {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  width: 150px;
+  z-index: 10;
+  background: #f8f9fa;
+  border-radius: 5px;
+  transform-origin: top right;
+  transform: scale(0);
+  transition: all 0.3s linear;
+  display: none;
+}
+
+.DropDownToggle {
+  display: block !important;
+  transform: scale(0);
+  animation: shadow 0.6s linear 1 forwards;
+}
+@keyframes shadow {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    box-shadow: none;
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.267);
+  }
+}
+.msgOptions .msgOptDropDown button {
+  padding: 4px 10px;
+  width: 100%;
+  background: none;
+  font-size: 13px;
+  line-height: 25px;
+  height: 33px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.msgOptions .msgOptDropDown button i {
+  width: 20px;
+  margin-right: 5px;
+  line-height: 25px;
+}
+@media screen and (max-width: 1200px) {
+  table.inbox-msgs td .d-flex {
+    flex-flow: row wrap !important;
+  }
+  .msgSender {
+    flex-grow: 1;
+  }
+  .mainMsg {
+    width: 100%;
+  }
+  .mainMsg {
+    order: 2;
+  }
+  .time {
+    order: 0;
+  }
+  .msgOptions {
+    order: 1;
+  }
+}
+@media screen and (max-width: 350px) {
+  .selectMail {
+    order: 2;
+  }
+  .msgSender {
+    order: 3;
+  }
+  .mainMsg {
+    order: 4;
+  }
+  .time {
+    width: calc(100% - 22px);
+  }
+}
+
+/* compsoemodal  */
+#ComposeModal .inputLabel {
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: capitalize;
+  margin-bottom: 3px;
+}
+#ComposeModal input , textarea{
+  height: 50px;
+  padding: 10px 15px;
+  border: 1px solid #ced4da !important;
+  font-size: 16px;
+  color: rgb(73, 80, 87)
+  ;
+  line-height: 25px;
+}
+#ComposeModal textarea{
+  height:  auto;
+}
+textarea:focus{
+  border: 1px solid #ced4da !important;
+  
+}
+#ComposeModal .modal-footer button, .replyBtns button {
+  font-size: 16px;
+  line-height: 25px;
+  padding: 10px 25px;
+  display: inline-block;
+  font-weight: 400;
+  background: var(--blue);
+  color: white;
+  text-transform: capitalize;
+  border-radius: 5px;
+  border: 1px solid var(--blue) !important;
+}
+#ComposeModal .modal-footer button:hover , .replyBtns button:hover{
+  background-color: #3c4890;
+  border-color: #384387;
+}
+#ComposeModal .modal-footer button:first-child {
+  background: none;
+  color: var(--blue);
+}
+#ComposeModal .modal-footer button:first-child:hover {
+  background-color: #dbe3f9;
+  border-color: #dbe3f9 !important;
+}
+
+
+
+/* inbox-message  */
+.messageContent h4{
+  font-size: 22px;
+  flex-grow: 1;
+}
+.messageContent div{
+  width: 50px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.messageContent div a{
+  width: 24px;
+  text-decoration: none;
+  color: #212529;
+  text-align: center;
+}
+.messageConv{
+  border-top: 1px solid #eee;
+}
+.messageConv .avatar img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.messageConv .nametime{
+  flex-grow: 1;
+}
+@media screen and (max-width:425px) {
+  .messageConv .nametime .d-flex{
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+  .messageConv .nametime h4{
+    margin-bottom: 9px !important;
+  }
+  
+}
+.messageConv .nametime h4{
+font-size: 18px;
+line-height: 25px;
+color: var(--blue);
+margin: 0;
+}
+.messageConv .nametime span{
+  line-height: 25px;
+font-size: 14px;
+}
+.messageConv .mail{
+  line-height: 25px;
+  font-size: 16px;
+  margin: 0;
+  color: var(--paraColor);
+}
+.attachmentList span{
+  display: inline-block;
+  margin-right: 10px;
+  line-height: 25px;
+}
+.attachmentList a{
+  line-height: 25px;
+}
+.attachment img{
+  width: 200px;
+  margin:0 10px 10px 0 ;
+  border-radius: 5px;
+}
+@media screen and (max-width:1000px) {
+  .attachment img{
+    width: calc(50% - 10px);
+  }
+}
+@media screen and (max-width:310px) {
+  .attachmentList span{
+    display: block;
+  }
+}
+
+@media screen and (max-width:400px) {
+  .attachment img{
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+.messageReply textarea{
+  height: 100px;
+  padding: 10px 15px;
+  border: 1px solid #ced4da !important;
+  font-size: 16px;
+  color: rgb(73, 80, 87);
+  line-height: 25px; 
+}
+.replyBtns {
+  display: flex;
+  align-items: center;
+}

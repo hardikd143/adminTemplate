@@ -1,0 +1,166 @@
+.login-content,
+.signup-content {
+  max-width: 500px;
+  margin: 0 auto;
+  display: grid;
+  align-items: center;
+  min-height: 100vh;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.loginHeader h3,
+.signupHeader h3 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+}
+.loginHeader p,
+.signupHeader p {
+  font-size: 16px;
+  color: var(--paraColor);
+  margin: 0;
+}
+.form-group input {
+  height: 50px;
+  padding: 10px 15px;
+  background-color: rgba(71, 90, 171, 0.07) !important;
+  border: 1px solid #ced4da !important;
+  font-size: 16px;
+  line-height: 25px;
+}
+.form-group input:focus {
+  background-color: white !important;
+}
+.rememberMe,
+.terms {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 0px;
+  cursor: pointer;
+  color: var(--paraColor);
+  user-select: none;
+}
+.rememberMe #Checkremember,
+.terms #agree {
+  height: 0;
+  width: 0;
+  position: absolute;
+  display: none;
+}
+.rememberMe label::before,
+.terms label::before {
+  content: " ";
+  position: absolute;
+  height: 21px;
+  width: 21px;
+  border-radius: 5px;
+  background: #eee;
+  transition: all 0.1s linear;
+  left: 0;
+}
+.rememberMe:hover label::before,
+.terms:hover label::before {
+  background: #e1e9f0;
+}
+.rememberMe input:checked + label::before,
+.terms input:checked + label::before {
+  background: var(--blue);
+}
+.rememberMe label::after,
+.terms label::after {
+  content: " ";
+  position: absolute;
+  left: 8px;
+  top: 2px;
+  width: 6px;
+  height: 13px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg) scale(0) !important;
+  transition: all 0.2s linear;
+}
+.rememberMe input:checked + label::after,
+.terms input:checked + label::after {
+  transform: rotate(45deg) scale(1) !important;
+}
+.submitbtn {
+  font-size: 16px;
+  line-height: 25px;
+  padding: 10px 20px;
+  color: white;
+  background: var(--blue);
+  display: inline-block;
+  font-weight: 400;
+  border: 1px solid var(--blue) !important;
+  text-transform: capitalize;
+}
+.submitbtn:hover {
+  background: #3c4890;
+  border-color: #3c4890 !important;
+}
+.toHome {
+  font-size: 16px;
+}
+.toHome a {
+  display: inline-flex;
+  color: var(--blue);
+  align-items: center;
+}
+.toHome a:hover {
+    color: white;
+}
+.toHome .arrow {
+    width: 24px;
+    line-height: 24px;
+    display: inline-block;
+    position: relative;
+}
+.toHome .arrow::before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: -4.8px;
+  border: solid var(--blue);
+  border-width: 0 0 3px 3px;
+  height: 10px;
+  width: 10px;
+  transform: rotate(45deg);
+  transition: all 0.4s linear;
+}
+.toHome a:hover .arrow::before {
+  top: -9.8px;
+  left: 1.5px;
+  height: 18px;
+  width: 18px;
+  transform: rotateZ(45deg) rotateY(180deg) rotateX(180deg);
+}
+.toHome .text {
+  overflow: hidden;
+  border-radius: 5px;
+  z-index: 100;
+  line-height: 34px;
+}
+.toHome .text::before {
+  content: " ";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  left: -4px;
+  transition: all 0.3s linear;
+}
+.toHome a:hover .text::before {
+  width: 130%;
+  background: var(--blue);
+  z-index: -100;
+}
+.passVisibility {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--paraColor);
+    font-size: 20px;
+    z-index: 20;
+}

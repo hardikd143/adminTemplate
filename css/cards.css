@@ -1,0 +1,133 @@
+.card {
+  margin-bottom: 12px;
+}
+.CardHeading {
+  padding: 30px 20px;
+  background: #fff;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eee;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.CardHeading h3 {
+  color: var(--blue) !important;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 27px;
+  margin: 0;
+}
+.CardHeading h3 span {
+  color: var(--paraColor);
+  font-weight: normal;
+}
+.card p {
+  line-height: 25px;
+  color: var(--paraColor);
+  font-size: 16px;
+}
+.card .blockquote-footer {
+  font-size: 16px;
+}
+ .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  top: 0;
+  left: 0;
+  background: none;
+  transition: all 0.2s linear;
+}
+ .content:hover .overlay {
+  background: rgb(0, 0, 0, 0.5);
+}
+.overlay .detail {
+  display: flex;
+  width: 100%;
+  transform: translateY(-150%);
+  justify-content: center;
+  transition: all 0.2s linear;
+  opacity: 0;
+}
+ .content:hover .detail {
+  opacity: 1;
+  transform: translateY(0);
+}
+.overlay .detail a {
+  line-height: 45px;
+  width: 60px;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  margin: 0 4px;
+}
+.overlay .detail a i {
+  line-height: 45px;
+}
+.overlay .detail a[href="#demo"] {
+  width: 120px;
+}
+@media screen and (max-width: 350px) {
+  .overlay .detail a {
+    line-height: 40px;
+    font-size: 15px;
+  }
+  .overlay .detail a i {
+    line-height: 40px;
+  }
+  .overlay .detail a[href="#cart"] {
+    width: 50px;
+  }
+
+  .overlay .detail a[href="#demo"] {
+    width: 100px;
+  }
+}
+.overlay .detail a[href="#demo"]:hover {
+  background: #3c4890 !important;
+}
+a.cardtitle {
+  font-size: 19px;
+  line-height: 25px;
+  font-weight: 600;
+  color: #2c3038;
+}
+ul.star {
+  margin: 5px 0 15px 0;
+}
+ul.star li {
+  display: inline-block;
+  font-size: 15px;
+  line-height: 25px;
+  color: var(--paraColor);
+}
+.more {
+  padding-top: 15px;
+  border-top: 1px solid #ddd;
+}
+.more span {
+  width: 50px;
+  margin-right: 15px;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 600;
+  color: #787984;
+}
+@media screen and (max-width:300px) {
+    .more span{
+        display: block;
+    }
+}
+.more span i {
+  width: 18px;
+  text-align: center;
+}
+.version3 p.small {
+    font-size: 15px;
+}
+.version3 p.small a{
+    color: var(--paraColor) !important;
+}

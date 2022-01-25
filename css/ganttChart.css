@@ -1,0 +1,177 @@
+.card {
+  font-family: "Poppins", sans-serif;
+  /* min-height: calc(100vh - 100px); */
+}
+.headerIcons {
+  height: 27px;
+}
+.headerIcons span {
+  display: inline-block;
+  line-height: 27px;
+  cursor: pointer;
+  width: 27px;
+  text-align: center;
+  font-size: 19px;
+}
+.chartContent{
+  overflow-x: scroll;
+}
+.chartContent .tableInfo {
+  width: 330px;
+}
+.chartContent .tableInfo .monthText,
+.tableInfo .durationText ,
+.tableInfo .showRow {
+  height: 50px;
+  line-height: 50px;
+  padding: 0 10px;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--blue);
+  border-bottom: 1px solid rgba(216, 216, 216, 0.384);
+}
+.table td {
+  font-size: 14px;
+  height: 50px !important;
+  overflow: hidden;
+  line-height: 50px;
+  border: 0;
+  color: rgb(99, 99, 99);
+  padding: 0 8px 0 10px;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+}
+.table-striped > tbody > tr:nth-of-type(odd) > * {
+  color: rgb(99, 99, 99);
+}
+.tableInfo .showRow {
+  display:flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.tableInfo .showRow span {
+  border: 1px solid rgb(99, 99, 99);
+  height: 30px;
+  border-radius: 5px;
+  margin:0 10px;
+  overflow: hidden;
+}
+.tableInfo .showRow span #showedRows{
+  height: 27px;
+  line-height: 27px;
+  width: 55px;
+  text-align: center  ;
+  position: relative;
+  top: -10px;
+  font-size: 17px;
+  border-radius: 10px;
+  color: rgb(99, 99, 99);
+}
+.chartContent .cal{
+  width: calc(100% - 330px);
+}
+.chartContent .calendar {
+  width: 100%;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  border-left: 1px solid rgba(216, 216, 216, 0.384);
+}
+.chartContent .calendar::-webkit-scrollbar , .chartContent::-webkit-scrollbar{
+  height: 10px;
+  display: unset !important;
+}
+.chartContent .calendar::-webkit-scrollbar-track, .chartContent::-webkit-scrollbar-track{
+  visibility: hidden;
+}
+.chartContent .calendar::-webkit-scrollbar-thumb , .chartContent::-webkit-scrollbar-thumb{
+  background: var(--black);
+  border-radius: 10px;
+}
+.calendar .inner {
+  width: auto;
+}
+.calendar .Month,
+.calendar .weekDates,
+.calendar .weekdays,
+.calendar .graphRow {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  font-weight: 600; 
+  font-size: 14px;
+  color: var(--blue);
+}
+.calendar .Month{
+  border-bottom: none ;
+}
+.calendar .Month div {
+  padding: 0 10px;
+  border-left: 1px solid rgba(216, 216, 216, 0.384);
+}
+.calendar .Month .janMonth {
+  width: calc(100% / 30 * 23);
+}
+.calendar .Month .febMonth {
+  width: calc(100% / 30 * 7);
+}
+.weekDates {
+  flex-basis: 100%;
+  border-bottom: none !important;
+}
+.calendar .weekDates span.date {
+  display: inline-block;
+  text-align: center;
+  flex-basis: 100%;
+  min-width: 30px;
+  border-bottom: 1px solid rgba(216, 216, 216, 0.384);
+  border-top: 1px solid rgba(216, 216, 216, 0.384);
+
+}
+.calendar .weekDates span.date[data-day="Sat"] {
+  border-right: 1px solid rgba(216, 216, 216, 0.384);
+}
+.weekdays{
+  flex-basis: 100%;
+  border-bottom: none !important;
+}
+.calendar .weekdays span.day {
+  display: inline-block;
+  text-align: center;
+  flex-basis: 100%;
+  min-width: 30px;
+  border-right: 1px solid rgba(216, 216, 216, 0.384);
+  border-bottom: 1px solid rgba(216, 216, 216, 0.384);
+}
+.calendar .graphRow {
+  width: 100% !important;
+  display: flex;
+  justify-content: stretch;
+}
+.calendar .graphRow div {
+  min-width: 30px;
+  flex-basis: 100%;
+  height: 50px;
+  border-left: 1px solid rgba(216, 216, 216, 0.384);
+  border-bottom: 1px solid rgba(216, 216, 216, 0.384);
+}
+.graphRow div.graphactive {
+  background: #2843df;
+  border-color: #2843df;
+}
+.cal .arrows{
+  height: 50px;
+  padding-right: 10px;
+  font-weight: lighter;
+}
+.cal .arrows button{
+  width: 30px;
+  height: 30px;
+  color: rgb(99, 99, 99);
+  background: none;
+  font-size: 25px;
+}
+@media screen and (max-width: 900px) {
+  .chartContent .cal {
+    width: 500px;
+  }
+}

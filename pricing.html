@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pricing</title>
+    <!-- css  -->
+    <link rel="stylesheet" href="./css/custom.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/pricing.css" />
+    <link rel="stylesheet" href="./css/font.css" />
+  </head>
+  <body>
+    <!-- sidebar starts here  -->
+    <div class="sidebar bg-white">
+      <div class="logo-icon position-relative">
+        <a class="side-links" href="index.html">
+          <img src="./img/logo.png" alt="logo" />
+        </a>
+        <a class="position-absolute top-0 end-0 MiniSidebarBtn transitionLinear">
+          <i class="fas fa-times"></i>
+        </a>
+      </div>
+      <ul class="sidebar-list">
+        <li class="Sidesearch">
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+        </li>
+        <li>
+          <a class="side-links" href="index.html"
+            ><i class="fa fa-tachometer"></i><span>Dashboard</span></a
+          >
+        </li>
+        <li>
+          <a class="side-links open-side-dropdown"
+            ><i class="fa fa-cogs"></i>
+            <span>Elements <i class="fas fa-angle-right"></i></span>
+          </a>
+          <ul class="sidebar-dropdown">
+            <li>
+              <a class="side-links" href="carousels.html"> Carousels</a>
+            </li>
+            <li>
+              <a class="side-links" href="cards.html"> Default cards</a>
+            </li>
+            <li>
+              <a class="side-links" href="people.html"> People cards</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a class="side-links open-side-dropdown"
+            ><i class="fas fa-book"></i>
+            <span>More Pages <i class="fas fa-angle-right"></i></span>
+          </a>
+          <ul class="sidebar-dropdown">
+            <li>
+              <a class="side-links" href="timeline.html"> Timeline</a>
+            </li>
+            <li>
+              <a class="side-links" href="error.html"> 404</a>
+            </li>
+            <li>
+              <a class="side-links" href="blank-page.html"> Blank Page</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a class="side-links" href="charts.html"
+            ><i class="fa fa-pie-chart"></i><span>Charts</span></a
+          >
+        </li>
+        <li>
+          <a class="side-links" href="Gantt-chart.html"
+          ><i class="fas fa-chart-bar"></i><span>Gantt Chart</span></a
+        > 
+        </li>
+        <li>
+          <a class="side-links" href="pricing.html"
+            ><i class="fa fa-table"></i><span>Pricing tables</span></a
+          >
+        </li>
+        <li>
+          <a class="side-links open-side-dropdown"
+            ><i class="fa far fa-envelope"></i
+            ><span>Mailbox <i class="fas fa-angle-right"></i></span
+          ></a>
+          <ul class="sidebar-dropdown">
+            <li>
+              <a class="side-links" href="inbox.html"> Inbox</a>
+            </li>
+            <li>
+              <a class="side-links" > Compose Mail</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a class="side-links" href="blocks.html"
+            ><i class="fa fa-th"></i>
+            <span> content blocks </span>
+          </a>
+        </li>
+        <li>
+          <a class="side-links" href="faq.html"
+            ><i class="fa far fa-question-circle"></i><span>Faq's</span></a
+          >
+        </li>
+        <li>
+          <a class="side-links open-side-dropdown"
+            ><i class="fas fa-user"></i><span>User <i class="fas fa-angle-right"></i></span></a
+          >
+          <ul class="sidebar-dropdown">
+            <li>
+              <a class="side-links" href="login.html"> Login</a>
+            </li>
+            <li>
+              <a class="side-links" href="register.html">Sign Up</a>
+            </li>
+            <li>
+              <a class="side-links" href="forgot-password.html">Forgot Password</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a class="side-links" href="forms.html"
+            ><i class="fas fa-file-alt"></i><span>Forms</span></a
+          >
+        </li>
+          <a class="MaxsideBarBtn transitionLinear rotate180">
+            <i class="fas fa-angle-double-right"></i>
+          </a>
+        </li>
+      </ul>
+
+      
+    </div>
+    <!-- sidebar ends here  -->
+    <!-- navbar starts here  -->
+    <nav class="navbar shadow navbar-expand-lg navbar-light bg-white">
+      <div class="container-fluid justify-content-end">
+        <button class="collapse-sidebar">
+          <i class="fas fa-angle-double-right"></i>
+        </button>
+        <form class="d-flex">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success" type="submit">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+        <div class="profile-detail d-flex ms-4">
+          <div class="left">
+            <ul class="d-flex">
+              <!-- notifications -->
+              <li class="profile-left-list position-relative">
+                <a class="position-relative openNotification me-3">
+                  <i class="far fa-bell"></i>
+                  <span class="position-absolute top-0 start-100 badge">
+                    4
+                  </span>
+                </a>
+                <!-- notification dropdown -->
+                <ul
+                  class="
+                    bg-white
+                    notificationDropdown
+                    profileDropdown
+                    overflow-hidden
+                  "
+                >
+                  <li class="w-100">
+                    <div class="header">
+                      <h3 class="m-0 line1">You Have 4 New Notifications</h3>
+                    </div>
+                  </li>
+                  <li class="notificationMsg">
+                    <a href="#" class="d-flex align-items-center">
+                      <div class="user-img">
+                        <img src="./img/avatar1.jpg" alt="" />
+                      </div>
+                      <div class="desc flex-grow-1">
+                        <p class="m-0 line1">Johnson purchased template</p>
+                        <span>Just Now</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="notificationMsg">
+                    <a href="#" class="d-flex align-items-center">
+                      <div class="user-img">
+                        <img src="./img/avatar2.jpg" alt="" />
+                      </div>
+                      <div class="desc flex-grow-1">
+                        <p class="m-0 line1">New customer registered</p>
+                        <span>1 hour ago</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="notificationMsg seeMore overflow-hidden">
+                    <a href="#" class="d-flex align-items-center">
+                      <div class="user-img">
+                        <img src="./img/avatar3.jpg" alt="" />
+                      </div>
+                      <div class="desc flex-grow-1">
+                        <p class="m-0 line1">Lorem ipsum dolor sit amet</p>
+                        <span>2 hours ago</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="notificationMsg seeMore overflow-hidden">
+                    <a href="#" class="d-flex align-items-center">
+                      <div class="user-img">
+                        <img src="./img/avatar1.jpg" alt="" />
+                      </div>
+                      <div class="desc flex-grow-1">
+                        <p class="m-0 line1">New customer registered</p>
+                        <span>3 hours ago</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li
+                    class="notificationBottom notificationseemore bg-blue hide"
+                  >
+                    <a href="#" class=""> See all </a>
+                  </li>
+                </ul>
+              </li>
+              <!-- comment  -->
+              <li class="profile-left-list position-relative">
+                <a class="position-relative openComment me-3">
+                  <i class="far fa-comment"></i>
+                  <span class="position-absolute top-0 start-100 badge">
+                    3
+                  </span>
+                </a>
+                <!-- comment dropdown -->
+                <ul
+                  class="
+                    bg-white
+                    commentDropdown
+                    profileDropdown
+                    overflow-hidden
+                  "
+                >
+                  <li class="w-100">
+                    <div class="header">
+                      <h3 class="m-0 line1">You Have 3 New Messages</h3>
+                    </div>
+                  </li>
+                  <li class="notificationMsg">
+                    <a href="#" class="d-flex align-items-center">
+                      <div class="user-img">
+                        <img src="./img/avatar1.jpg" alt="" />
+                      </div>
+                      <div class="desc flex-grow-1">
+                        <p class="m-0 line1">Johnson purchased template</p>
+                        <span>Just Now</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="notificationMsg">
+                    <a href="#" class="d-flex align-items-center">
+                      <div class="user-img">
+                        <img src="./img/avatar2.jpg" alt="" />
+                      </div>
+                      <div class="desc flex-grow-1">
+                        <p class="m-0 line1">New customer registered</p>
+                        <span>1 hour ago</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="notificationMsg seeMore overflow-hidden">
+                    <a href="#" class="d-flex align-items-center">
+                      <div class="user-img">
+                        <img src="./img/avatar3.jpg" alt="" />
+                      </div>
+                      <div class="desc flex-grow-1">
+                        <p class="m-0 line1">Lorem ipsum dolor sit amet</p>
+                        <span>2 hours ago</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="notificationBottom commentseemore bg-blue hide">
+                    <a href="#" class=""> See all </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <!-- profile  -->
+          <div class="right position-relative">
+            <a class="me-3 position-relative openProfile">
+              <img src="./img/profileimg.jpg" alt="profileimg" />
+              <span class="position-absolute top-0 start-100 badge"> </span>
+            </a>
+            <!-- profile dropdown -->
+            <ul class="bg-white mainprofileDropdown overflow-hidden">
+              <li class="user bg-blue text-white">
+                <h5 class="fw-bolder">John Deo</h5>
+                <span class="ms-2">Available</span>
+              </li>
+              <li class="profilelist">
+                <a href="#" class="d-flex align-items-center">
+                  <i class="fas fa-user text-blue"></i>
+                  My Profile
+                </a>
+              </li>
+              <li class="profilelist">
+                <a href="#" class="d-flex align-items-center">
+                  <i class="fas fa-user-friends text-blue"></i>
+                  1k Followers
+                </a>
+              </li>
+              <li class="profilelist">
+                <a href="#" class="d-flex align-items-center">
+                  <i class="fas fa-cog text-blue"></i>
+                  Setting
+                </a>
+              </li>
+              <li class="profilelist">
+                <a href="#" class="d-flex align-items-center">
+                  <i class="fas fa-heart text-blue"></i>
+                  100 Likes
+                </a>
+              </li>
+              <li class="profilelist">
+                <a href="#" class="d-flex align-items-center">
+                  <i class="fas fa-power-off text-blue"></i>
+                  Logout
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar ends here  -->
+    <!-- scroll btn starts here  -->
+    <button class="scrollTopBtn">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+    <!-- scroll btn ends here  -->
+    <!-- main content starts here -->
+    <div class="main-content">
+      <div class="container-fluid main-inner">
+        <!-- version 1  -->
+        <div class="pricingVersion-1">
+          <div class="card">
+            <div class="CardHeading">
+              <h3>Pricing Tables - <span> Version 1</span>
+              </h3>
+            </div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-12 col-lg-4 col-md-6">
+                  <div class="priceCard  p-lg-4 p-md-3 p-4 mb-4">
+                    <div class="card-header border-0">
+                      <h4 class="mb-4 text-purple">Free</h4>
+                    </div>
+                    <div class="card-body p-0">
+                      <h1 class="card-title pricingCardTitle">
+                        $0<small>/month</small>
+                      </h1>
+                      <p>
+                        There are many variations of passages of Lorem Ipsum available.
+                      </p>
+                      <ul class="list-unstyled listPricing mt-3 mb-4">
+                        <li>1 Domain</li>
+                        <li>10 Users included</li>
+                        <li>2 GB of storage</li>
+                        <li>Email support</li>
+                        <li>Help center access</li>
+                      </ul>
+                      <a href="" class="pricingBtn outlined">
+                        Sign Up For Free
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4 col-md-6">
+                  <div class="priceCard  p-lg-4 p-md-3 p-4 mb-4 " style="border-top:4px solid var(--blue)">
+                    <div class="card-header border-0">
+                      <h4 class="mb-4 text-purple">Regular <span class="label">Popular</span></h4>
+                    </div>
+                    <div class="card-body p-0">
+                      <h1 class="card-title pricingCardTitle">
+                        $49<small>/month</small>
+                      </h1>
+                      <p>
+                        There are many variations of passages of Lorem Ipsum available.
+                      </p>
+                      <ul class="list-unstyled listPricing mt-3 mb-4">
+                        <li>10 Domain</li>
+                        <li>20 Users included</li>
+                        <li>10 GB of storage</li>
+                        <li>Priority email support</li>
+                        <li>Help center access</li>
+                      </ul>
+                      <a href="" class="pricingBtn ">
+                        Get started
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4 col-md-6">
+                  <div class="priceCard  p-lg-4 p-md-3 p-4 mb-4">
+                    <div class="card-header border-0">
+                      <h4 class="mb-4 text-purple">Premiun</h4>
+                    </div>
+                    <div class="card-body p-0">
+                      <h1 class="card-title pricingCardTitle">
+                        $199<small>/month</small>
+                      </h1>
+                      <p>
+                        There are many variations of passages of Lorem Ipsum available.
+                      </p>
+                      <ul class="list-unstyled listPricing mt-3 mb-4">
+                        <li>30 Domain</li>
+                        <li>30 Users included</li>
+                        <li>15 GB of storage</li>
+                        <li>Phone and email support</li>
+                        <li>Help center access</li>
+                      </ul>
+                      <a href="" class="pricingBtn outlined">
+                        Contact Us
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- version 2  -->
+        <div class="pricingVersion-2">
+          <div class="card">
+            <div class="CardHeading">
+              <h3>Pricing Tables - <span> Version 2</span>
+              </h3>
+            </div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-12 col-lg-4 col-md-6 mb-4">
+                  <div class="card text-center cardv2">
+                    <div class="card-header ">
+                      <h3 class="display-4">
+                        <span class="curr">$</span>19<span class="dura">/month</span>
+                      </h3>
+                    </div>
+                    <div class="cardInfo">
+                      <h4 class="card-title">BASIC PLAN
+                      </h4>
+                      <ul class="list-group">
+                        <li class="list-group-item">1 Domain</li>
+                        <li class="list-group-item">Ultimate Features</li>
+                        <li class="list-group-item">Responsive Ready</li>
+                        <li class="list-group-item">Editor Ready Builder</li>
+                        <li class="list-group-item">Limited UI Blocks</li>
+                        <li class="list-group-item">24/7 Support System</li>
+                      </ul>
+                      <a  class="pricingBtn mt-4">Choose Plan</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4 col-md-6 mb-4">
+                  <div class="card text-center cardv2">
+                    <div class="card-header ">
+                      <h3 class="display-4">
+                        <span class="curr">$</span>29<span class="dura">/month</span>
+                      </h3>
+                    </div>
+                    <div class="cardInfo">
+                      <h4 class="card-title">REGULAR PLAN
+                      </h4>
+                      <ul class="list-group">
+                        <li class="list-group-item">10 Domain</li>
+                        <li class="list-group-item">Ultimate Features</li>
+                        <li class="list-group-item">Responsive Ready</li>
+                        <li class="list-group-item">Editor Ready Builder</li>
+                        <li class="list-group-item">Unlimited UI Blocks</li>
+                        <li class="list-group-item">24/7 Support System</li>
+                      </ul>
+                      <a  class="pricingBtn mt-4">Choose Plan</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4 col-md-6 mb-4">
+                  <div class="card text-center cardv2">
+                    <div class="card-header ">
+                      <h3 class="display-4">
+                        <span class="curr">$</span>39<span class="dura">/month</span>
+                      </h3>
+                    </div>
+                    <div class="cardInfo">
+                      <h4 class="card-title">PREMIUM PLAN
+                      </h4>
+                      <ul class="list-group">
+                        <li class="list-group-item">15 Domain</li>
+                        <li class="list-group-item">Ultimate Features</li>
+                        <li class="list-group-item">Responsive Ready</li>
+                        <li class="list-group-item">Editor Ready Builder</li>
+                        <li class="list-group-item">Unlimited UI Blocks</li>
+                        <li class="list-group-item">24/7 Support System</li>
+                      </ul>
+                      <a  class="pricingBtn mt-4">Choose Plan</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- version 3 -->
+        <div class="pricingVersion-3">
+          <div class="card">
+            <div class="CardHeading">
+              <h3>Pricing Tables - <span> Version 3</span>
+              </h3>
+            </div>
+            <div class="card-body">
+              <div class="card customCardShadow">
+                <div class="card-body">
+                  <div class="table-responsive">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th style="min-width:140px">Website</th>
+                          <th style="min-width:200px">Basic</th>
+                          <th style="min-width:200px">Personal</th>
+                          <th style="min-width:200px">Business</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <!-- pricing  -->
+                        <tr class="price">
+                          <td>
+                            <h5>Pricing and its Info
+                            </h5>
+                          </td>
+                          <td>
+                            <span><span class="curr">$</span>16</span>
+                            <p>Per month billed annually, or $15 billed monthly, or $120 billed monthly
+                            </p>
+                          </td>
+                          <td>
+                            <span><span class="curr">$</span>21</span>
+                            <p>Per month billed annually, or $15 billed monthly, or $120 billed monthly
+                            </p>
+                          </td>
+                          <td>
+                            <span><span class="curr">$</span>32</span>
+                            <p>Per month billed annually, or $15 billed monthly, or $120 billed monthly
+                            </p>
+                          </td>
+                        </tr>
+                        <!-- hosting  -->
+                        <tr>
+                          <td>
+                            <h5>Hosting</h5>
+                          </td>
+                          <td class="check">✓</td>
+                          <td class="check">✓</td>
+                          <td class="check">✓</td>
+                        </tr>
+                        <!-- connect of domain -->
+                        <tr>
+                          <td>
+                            <h5>Connect of domain</h5>
+                          </td>
+                          <td class="check">✓</td>
+                          <td class="check">✓</td>
+                          <td class="check">✓</td>
+                        </tr>
+                        <!-- ssl certificate  -->
+                        <tr>
+                          <td>
+                            <h5>SSL certificate</h5>
+                          </td>
+                          <td class="check">✓</td>
+                          <td class="check">✓</td>
+                          <td class="check">✓</td>
+                        </tr>
+                        <!-- monthly visits -->
+                        <tr>
+                          <td>
+                            <h5>
+                              Monthly visits
+                            </h5>
+                          </td>
+                          <td><h6 class="amnt">25,000</h6></td>
+                          <td><h6 class="amnt">50,000</h6></td>
+                          <td><h6 class="amnt">1,00,000</h6></td>
+                        </tr>
+                        <!-- Form Submission  -->
+                        <tr class="formSub">
+                          <td>
+                            <h5 class="subBlack">Form submission
+                            </h5>
+                            <p class="text-para ">
+                              Collection of components and UI elements for creating website.
+                            </p>
+                          </td>
+                          <td><h5 class="subBlack">500</h5></td>
+                          <td>
+                            <h5 class="subBlack">1000</h5>
+                            <p>
+                              Collection of components and UI elements for creating efficient website
+                            </p>
+                          </td>
+                          <td>
+                            <h5 class="subBlack">Unlimited</h5>
+                          </td>
+                        </tr>
+                        <!-- CMS item   -->
+                        <tr>
+                          <td>
+                            <h5>CMS items</h5>
+                          </td>
+                          <td><h6></h6></td>
+                          <td><h6 class="amnt">2000</h6></td>
+                          <td><h6 class="amnt">10,000</h6></td>
+                        </tr>
+                        <!-- SSL certificate  -->
+                        <tr>
+                          <td>
+                            <h5>SSL certificate</h5>
+                          </td>
+                          <td></td>
+                          <td></td>
+                          <td class="check">✓</td>
+                        </tr>
+                        <!-- btn  -->
+                        <tr>
+                          <td></td>
+                          <td>
+                            <a class="pricingBtn">Purchase</a>
+                          </td>
+                          <td>
+                            <a class="pricingBtn">Purchase</a>
+                          </td>
+                          <td>
+                            <a class="pricingBtn">Purchase</a>
+                          </td>
+                          
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- main content ends here -->
+    <!-- script  -->
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/fontawesome.js"></script>
+    <script src="./js/header.js"></script>
+  </body>
+</html>

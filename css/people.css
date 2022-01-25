@@ -1,0 +1,198 @@
+@media screen and (max-width:768px) and (min-width:500px) {
+    .peopleItem{
+        max-width: 470px !important;
+        margin: auto;
+    }
+}
+.pCardheading {
+  padding: 30px 20px;
+  background: #fff;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eee;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.pCardheading h3 {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 27px;
+    margin: 0;
+}
+.pCardheading span {
+    color: var(--paraColor);
+    font-weight: normal;
+}
+.version1 .col-12{
+    min-width: 230px;
+}
+.version1 .peopleItem {
+    position: relative;
+    background: #f5f5f5;
+    padding-bottom: 125px;
+    border: none;
+    box-shadow: 0 1px 2px 1px rgba(154, 154, 204, 0.22);
+    border-radius: 7px;
+    overflow: hidden;
+    margin-bottom: 20px ;
+}
+.version1 .peopleItem  img{
+    transform-origin:right bottom ;
+    transition: all 0.3s linear;
+}
+.version1 .peopleItem:hover  img{
+    transform: scale(1.1);
+}
+.version1 .peopleInfo {
+    position: absolute;
+    width: 90%;
+    margin: -35px 5% 0;
+    background: #fff !important;
+    padding: 20px 10px 10px;
+    transition: all 0.3s linear;
+}
+.version1 .peopleItem:hover .peopleInfo{
+    box-shadow:  inset 0 0 10px rgb(180, 180, 180);
+    transform: translateY(-10px);
+}
+.version1 .peopleInfo h3{
+    color: var(--blue);
+    font-size: 25px;
+    font-weight: 600;
+}
+.version1 .peopleInfo span{
+    font-size: 16px;
+    line-height: 25px;
+    color: var(--paraColor);
+    display: block;
+}
+.version1 .peopleItem .social {
+    display: inline-flex;
+    margin: 10px 0;
+    transition: all 0.3s linear;
+}
+.version1 .peopleItem .social a{
+    text-decoration: none;
+    color: var(--paraColor);
+    line-height: 35px;
+    width: 35px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    text-align:  center;
+    transition: all 0.3s linear;
+    margin-right: 5px;
+}
+.version1 .peopleItem:hover .social a{
+    background: var(--black);
+    border-color: var(--black);
+    color: white;
+}
+.version1 .peopleItem:hover .social a:nth-child(2){
+    transition-delay: 0.2s;
+}
+
+.version1 .peopleItem:hover .social a:nth-child(3){
+    transition-delay: 0.3s;
+}
+.version2 .card {
+    border-radius: 7px !important;
+    margin: 10px 0;
+}
+
+.version2 .col-12{
+    min-width: 230px;
+}
+.version2 .v2-inner img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+.v2-inner .info h5{
+    font-size: 19px;
+    line-height: 25px;
+    font-weight: 600;
+    color: #2c3038;
+    margin-bottom: 10px;
+}
+.v2-inner .info .social, .version3 .social{
+    display: flex;
+    margin: 10px 0;
+    justify-content: center;
+}
+.v2-inner .info .social a, .version3 .social a{
+    width: 32px;
+    line-height: 32px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 14px;
+    color: white !important;
+    margin: 0 3px;
+    transition: all 0.5s linear;
+}
+.version2 .col-12 .card:hover .social a, .version3 .col-12 .card:hover .social a{
+    margin: 0 7px;
+    transform: scale(1.2) !important;
+}
+.v2-inner .info .social a:first-child , .version3 .social a:first-child{
+    background: #3b5998;
+}
+
+.v2-inner .info .social a:nth-child(2), .version3 .social a:nth-child(2){
+    transition-delay: 0.2s;
+    background: #1da1f2;
+}
+.v2-inner .info .social a:nth-child(3), .version3 .social a:nth-child(3){
+    transition-delay: 0.3s;
+    background: #0077b5;
+}
+.v2-inner .info .viewProfile{
+    font-weight: 500;
+    transition: all 0.3s linear;
+    display: inline-block;
+}
+.v2-inner .info .viewProfile:hover{
+    letter-spacing: 1px;
+}
+.version3 .card{
+    border-radius: 7px;
+}
+.version3 .info{
+    color: var(--paraColor);
+}
+.version3 .card .info h3{
+    font-size: 19px;
+    line-height: 25px;
+    font-weight: 600;
+    color: #2c3038;
+}
+.version3 .card .info .call , .version3 .info .mail{
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 5px;
+    text-decoration: none;
+    color: var(--paraColor);
+    text-align: center;
+}
+.version3 .card .info .call i, .mail i{
+    line-height: 25px;
+    width: 25px;
+    text-align: center;
+
+}
+.version3 .card .info  .fa-phone{
+    transform: rotate(90deg);
+}
+@media screen and (max-width:470px) {
+ 
+    .version3 .card .row{
+        flex-direction: column !important;
+    }
+    .version3 img{
+        width: 90% !important;
+        border-radius: 10px;
+        margin: auto !important;
+    }
+    .version3 .card .row .col-6{
+        width: 100% !important;
+    }
+}

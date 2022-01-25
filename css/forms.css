@@ -1,0 +1,110 @@
+@media screen and (max-width: 500px) {
+  .main-inner {
+    padding: 0 !important;
+  }
+}
+
+.form-group input:not(input[type="radio"], input[type="checkbox"]),
+select {
+  height: 50px;
+  padding: 10px 15px;
+  border: 1px solid #ced4da !important;
+  line-height: 25px;
+  color: var(--paraColor);
+  font-size: 16px;
+}
+.was-validated select{
+    border-color: #ff4f81 !important;
+}
+input[type="file"].form-control:invalid{
+    border-color: #ff4f81 !important;
+}
+input[type="radio"],input[type="checkbox"]{
+    border: 1px solid #ced4da !important;
+    height: 15px;
+    margin-right: 5px;
+    background: inherit;
+    width: 15px;
+}
+.form-group input:focus,
+select:focus {
+  border: 1px solid var(--blue) !important;
+}
+
+.passVisibility {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--paraColor);
+  font-size: 20px;
+  z-index: 20;
+}
+
+.rememberMe {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 0px;
+  cursor: pointer;
+  color: var(--paraColor);
+  user-select: none;
+}
+.rememberMe #Checkremember {
+  height: 0;
+  width: 0;
+  position: absolute;
+  display: none;
+}
+.rememberMe label::before {
+  content: " ";
+  position: absolute;
+  height: 21px;
+  width: 21px;
+  border-radius: 5px;
+  background: #eee;
+  transition: all 0.1s linear;
+  left: 0;
+}
+.rememberMe:hover label::before {
+  background: #e1e9f0;
+}
+.rememberMe input:checked + label::before {
+  background: var(--blue);
+}
+.rememberMe label::after {
+  content: " ";
+  position: absolute;
+  left: 8px;
+  top: 2px;
+  width: 6px;
+  height: 13px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg) scale(0) !important;
+  transition: all 0.2s linear;
+}
+.rememberMe input:checked + label::after {
+  transform: rotate(45deg) scale(1) !important;
+}
+.submitbtn {
+  font-size: 16px;
+  line-height: 25px;
+  padding: 10px 20px;
+  color: white;
+  background: var(--blue);
+  display: inline-block;
+  font-weight: 400;
+  border: 1px solid var(--blue) !important;
+  text-transform: capitalize;
+}
+.submitbtn:hover {
+  background: #3c4890;
+  border-color: #3c4890 !important;
+}
+.horizontalforms label {
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: capitalize;
+  margin-bottom: 3px;
+}

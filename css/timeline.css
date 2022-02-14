@@ -46,6 +46,7 @@
 .tCard .line .year {
   float: left;
   width: 20%;
+  padding-top: 3px;
   padding-right: 30px;
   text-align: right;
   position: relative;
@@ -64,7 +65,19 @@
   z-index: 99;
 }
 .tCard .line .year h3 {
-  font-size: 19px;
+  font-size: 17px;
+}
+@media screen and (max-width:500px) {
+  .main-content .main-inner{
+    padding: 0 !important;
+  }
+  .tCard .line .year{
+    padding-right: 10px;
+    padding-top: 4px;
+  }
+.tCard .line .year h3 {
+  font-size: 15px;
+}
 }
 .tCard .line .body {
   width: 80%;

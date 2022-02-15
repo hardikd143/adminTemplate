@@ -80,7 +80,7 @@ body {
   border-radius: 50%;
   transform: scale(0);
   transform-origin: center;
-  transition: all 0.3s linear;
+  transition: all 0.2s linear;
   left: 0;
 }
 .MiniSidebarBtn:hover i::after{

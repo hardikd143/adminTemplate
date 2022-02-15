@@ -38,6 +38,8 @@ body {
 .logo-icon {
   width: 100%;
   background: var(--blue);
+  display: flex;
+  justify-content: space-between;
 }
 .logo-icon a:not(.MiniSidebarBtn) {
   background: var(--blue);
@@ -59,6 +61,30 @@ body {
   color: white !important;
   cursor: pointer;
   font-size: 20px;
+  z-index: 0;
+  position: relative !important;
+}
+.MiniSidebarBtn i{
+  width: 60px;
+  line-height: 60px;
+  text-align: center;
+}
+.MiniSidebarBtn i::after{
+  content: "";
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #1a1a26;
+  top: 0%;
+  border-radius: 50%;
+  transform: scale(0);
+  transform-origin: center;
+  transition: all 0.3s linear;
+  left: 0;
+}
+.MiniSidebarBtn:hover i::after{
+  transform: scale(0.7);
 }
 .MaxsideBarBtn {
   text-decoration: none;
@@ -70,6 +96,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.2s linear;
+}
+.MaxsideBarBtn:hover{
+  background: var(--blue);
+  color: white !important;
 }
 .rotate180{
   transform: rotateY(180deg);

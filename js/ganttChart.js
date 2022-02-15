@@ -32,7 +32,6 @@ $(document).ready(function () {
     // above method will get date in below format ---
     // Sun Jan 09 2022 00:00:00 GMT+0530 (India Standard Time)
 
-
     let str = newD.toString();
     day = str.substring(0, 3);
     weekDay = str.substring(0, 1);

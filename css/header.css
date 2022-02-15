@@ -244,7 +244,7 @@ body {
   transform: scale(0);
   display: none;
   border-radius: 5px;
-  box-shadow: 0 0 1px #aeaeae;
+  box-shadow: 0 2px 5px rgb(0, 0, 0,0.5);
   animation: profileDropdown 0.3s forwards 1;
   transform-origin: top right;
   transition: all 0.3s linear;
@@ -336,7 +336,7 @@ body {
   transform: scale(0);
   display: none;
   border-radius: 5px;
-  box-shadow: 0 0 1px #aeaeae;
+  box-shadow: 0 2px 5px rgb(0, 0, 0,0.5);
   animation: profileDropdown 0.3s forwards 1;
   transform-origin: top right;
   transition: all 0.3s linear;

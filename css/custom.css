@@ -8,6 +8,10 @@
   --light:#E7EDF6;
   --paraColor:#5d6b71;
 }
+*::selection{
+  background: var(--blue);
+  color: var(--white);
+}
 /* Style css starts */
 * {
   margin: 0;

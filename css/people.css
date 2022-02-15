@@ -67,32 +67,8 @@
     display: block;
 }
 .version1 .peopleItem .social {
-    display: inline-flex;
-    margin: 10px 0;
-    transition: all 0.3s linear;
-}
-.version1 .peopleItem .social a{
-    text-decoration: none;
-    color: var(--paraColor);
-    line-height: 35px;
-    width: 35px;
-    border: 1px solid transparent;
-    border-radius: 50%;
-    text-align:  center;
-    transition: all 0.3s linear;
-    margin-right: 5px;
-}
-.version1 .peopleItem:hover .social a{
-    background: var(--black);
-    border-color: var(--black);
-    color: white;
-}
-.version1 .peopleItem:hover .social a:nth-child(2){
-    transition-delay: 0.2s;
-}
-
-.version1 .peopleItem:hover .social a:nth-child(3){
-    transition-delay: 0.3s;
+    display: flex  !important;
+    justify-content: flex-start !important;
 }
 .version2 .card {
     border-radius: 7px !important;
@@ -114,12 +90,12 @@
     color: #2c3038;
     margin-bottom: 10px;
 }
-.v2-inner .info .social, .version3 .social{
+.social{
     display: flex;
     margin: 10px 0;
     justify-content: center;
 }
-.v2-inner .info .social a, .version3 .social a{
+.social a{
     width: 32px;
     line-height: 32px;
     text-align: center;
@@ -130,18 +106,18 @@
     transition: all 0.5s linear;
 }
 .version2 .col-12 .card:hover .social a, .version3 .col-12 .card:hover .social a{
-    margin: 0 7px;
-    transform: scale(1.2) !important;
+    margin: 0 8px;
+    transform: scale(1.3) !important;
 }
-.v2-inner .info .social a:first-child , .version3 .social a:first-child{
+.social a:first-child{
     background: #3b5998;
 }
 
-.v2-inner .info .social a:nth-child(2), .version3 .social a:nth-child(2){
+.social a:nth-child(2){
     transition-delay: 0.2s;
     background: #1da1f2;
 }
-.v2-inner .info .social a:nth-child(3), .version3 .social a:nth-child(3){
+.social a:nth-child(3){
     transition-delay: 0.3s;
     background: #0077b5;
 }

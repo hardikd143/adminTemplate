@@ -42,6 +42,11 @@
     top: 5px;
     transition: all 0.3s linear;
 }
+@media screen and (ma-width:500px) {
+  .wrapper .arrow::before , .wrapper .arrow::after{
+    transition: all 0.5s linear;
+  }
+}
 .wrapper .arrow.close::after{
     transform: rotate(315deg);
     /* transform:rotateY(180deg) rotate(45deg); */

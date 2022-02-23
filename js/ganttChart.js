@@ -42,16 +42,16 @@ $(document).ready(function () {
     $(".weekdays").append($(daySpan));
   }
 
-  $("#calendar").slimScroll({
-    railOpacity: 1,
-    axis: "x",
-    color: "green",
-    alwaysVisible: true,
-    size: "8px",
-    width: "100%",
-    height: "100%",
-    railVisible: true,
-    railColor: "#303030",
-    railOpacity: 0.5,
-  });
+  // $("#calendar").slimScroll({
+  //   railOpacity: 1,
+  //   axis: "x",
+  //   color: "green",
+  //   alwaysVisible: true,
+  //   size: "8px",
+  //   width: "100%",
+  //   height: "100%",
+  //   railVisible: true,
+  //   railColor: "#303030",
+  //   railOpacity: 0.5,
+  // });
 });

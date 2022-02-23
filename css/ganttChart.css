@@ -108,12 +108,6 @@
   padding: 0 10px;
   border-left: 1px solid rgba(216, 216, 216, 0.384);
 }
-.calendar .Month .janMonth {
-  width: calc(100% / 30 * 23);
-}
-.calendar .Month .febMonth {
-  width: calc(100% / 30 * 7);
-}
 .weekDates {
   flex-basis: 100%;
   border-bottom: none !important;
